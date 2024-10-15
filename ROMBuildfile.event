@@ -10,6 +10,10 @@
     #include "Text/InstallTextData.event"
     MESSAGE Used text space ends at currentOffset
 
+    //Graphics
+    #include "Graphics/GraphicsInstaller.event"
+    MESSAGE Used graphics space ends at currentOffset
+
     //CSV tables
     #include "Tables/TableInstaller.event"
     MESSAGE Used table space ends at currentOffset
@@ -30,6 +34,8 @@
 	ASSERT (FreeSpaceEnd - currentOffset) // So that you don't overwrite vanilla tables if using default freespace
 	
     MESSAGE Used free space ends at currentOffset
+
+    MESSAGE "I should put something funny here"
 #else
     ERROR "You are not assembling FE8 events!"
 #endif

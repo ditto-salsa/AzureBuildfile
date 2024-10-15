@@ -1,0 +1,91 @@
+ALIGN 4
+CeleriaMug:
+#incbin "Celeria_mug.dmp"
+#incbin "Celeria_frames.dmp"
+#incbin "Celeria_palette.dmp"
+#incbin "Celeria_minimug.dmp"
+
+ALIGN 4
+ElgenMug:
+#incbin "Elgen_mug.dmp"
+#incbin "Elgen_frames.dmp"
+#incbin "Elgen_palette.dmp"
+#incbin "Elgen_minimug.dmp"
+
+ALIGN 4
+EstherMug:
+#incbin "Esther_mug.dmp"
+#incbin "Esther_frames.dmp"
+#incbin "Esther_palette.dmp"
+#incbin "Esther_minimug.dmp"
+
+ALIGN 4
+GrantanMug:
+#incbin "Grantan_mug.dmp"
+#incbin "Grantan_frames.dmp"
+#incbin "Grantan_palette.dmp"
+#incbin "Grantan_minimug.dmp"
+
+ALIGN 4
+JessMug:
+#incbin "Jess_mug.dmp"
+#incbin "Jess_frames.dmp"
+#incbin "Jess_palette.dmp"
+#incbin "Jess_minimug.dmp"
+
+ALIGN 4
+LazarusMug:
+#incbin "Lazarus_mug.dmp"
+#incbin "Lazarus_frames.dmp"
+#incbin "Lazarus_palette.dmp"
+#incbin "Lazarus_minimug.dmp"
+
+ALIGN 4
+LorienMug:
+#incbin "Lorien_mug.dmp"
+#incbin "Lorien_frames.dmp"
+#incbin "Lorien_palette.dmp"
+#incbin "Lorien_minimug.dmp"
+
+ALIGN 4
+LorienAltMug:
+#incbin "LorienAlt_mug.dmp"
+#incbin "LorienAlt_frames.dmp"
+#incbin "LorienAlt_palette.dmp"
+#incbin "LorienAlt_minimug.dmp"
+
+ALIGN 4
+OrinocoMug:
+#incbin "Orinoco_mug.dmp"
+#incbin "Orinoco_frames.dmp"
+#incbin "Orinoco_palette.dmp"
+#incbin "Orinoco_minimug.dmp"
+
+ALIGN 4
+SamaelMug:
+#incbin "Samael_mug.dmp"
+#incbin "Samael_frames.dmp"
+#incbin "Samael_palette.dmp"
+#incbin "Samael_minimug.dmp"
+
+ALIGN 4
+SerolMug:
+#incbin "Serol_mug.dmp"
+#incbin "Serol_frames.dmp"
+#incbin "Serol_palette.dmp"
+#incbin "Serol_minimug.dmp"
+
+ALIGN 4
+ShinoMug:
+#incbin "Shino_mug.dmp"
+#incbin "Shino_frames.dmp"
+#incbin "Shino_palette.dmp"
+#incbin "Shino_minimug.dmp"
+
+ALIGN 4
+ThaliaMug:
+#incbin "Thalia_mug.dmp"
+#incbin "Thalia_frames.dmp"
+#incbin "Thalia_palette.dmp"
+#incbin "Thalia_minimug.dmp"
+

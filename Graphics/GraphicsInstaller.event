@@ -1,0 +1,19 @@
+#include "Mugs/Mugs Installer.event"
+
+#include "MapSprites/Installer.event"
+
+#include "ItemIcons/Installer.event"
+
+
+//This file will not exist until you use Pal2EA to generate the file. Go check out the thread https://feuniverse.us/t/pal2ea-the-buildfile-palette-inserter/2646 . Alternatives exist but I found this was the easiest to start with.
+//#include "Palettes/Palette Installer.event"
+
+#include "Animation/Master Animation Installer.txt"
+
+#include "BattleScreen/Installer.event"
+
+//Change which portrait the supply uses to JessMug
+PUSH
+ORG 0x9D70E
+BYTE 0x8
+POP
