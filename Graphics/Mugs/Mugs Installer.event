@@ -29,3 +29,5 @@ setMugEntry(0xB, LorienAltMug, 2,5,3,3)
 setMugEntry(0xC, GrantanMug, 3,5,3,3)
 
 setMugEntry(0xD, OrinocoMug, 3,5,3,3)
+
+//setMugEntry(0x64, FuckElvesMug,)

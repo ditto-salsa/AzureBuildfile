@@ -8,7 +8,7 @@
 //This file will not exist until you use Pal2EA to generate the file. Go check out the thread https://feuniverse.us/t/pal2ea-the-buildfile-palette-inserter/2646 . Alternatives exist but I found this was the easiest to start with.
 //#include "Palettes/Palette Installer.event"
 
-#include "Animation/Master Animation Installer.txt"
+//#include "Animation/Master Animation Installer.txt"
 
 #include "BattleScreen/Installer.event"
 

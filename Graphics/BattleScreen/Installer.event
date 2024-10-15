@@ -15,27 +15,25 @@
 // TSA5 - pointer at 52170 // length 80
 // TSA Single - pointer at 5141C // length 224
 
-{
-
 ALIGN 4
 BattleScreen_MainTiles:
-#incbin "dmp/main.dmp"
+#incext Png2Dmp "png/main.png" --lz77
 
 ALIGN 4
 BattleScreen_LeftName:
-#incbin "dmp/left_name.dmp"
+#incext Png2Dmp "png/left_name.png" --lz77
 
 ALIGN 4
 BattleScreen_RightName:
-#incbin "dmp/right_name.dmp"
+#incext Png2Dmp "png/right_name.png" --lz77
 
 ALIGN 4
 BattleScreen_LeftWeapon:
-#incbin "dmp/left_weapon.dmp"
+#incext Png2Dmp "png/left_weapon.png" --lz77
 
 ALIGN 4
 BattleScreen_RightWeapon:
-#incbin "dmp/right_weapon.dmp"
+#incext Png2Dmp "png/right_weapon.png" --lz77
 
 ALIGN 4
 BattleScreen_Palette:
@@ -93,5 +91,3 @@ ORG $5141C
 POIN BattleScreen_TSA_Single
 
 POP
-
-}
