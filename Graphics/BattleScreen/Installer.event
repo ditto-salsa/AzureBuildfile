@@ -17,27 +17,23 @@
 
 ALIGN 4
 BattleScreen_MainTiles:
-#incext Png2Dmp "png/main.png" --lz77
+#incbin "dmp/main.dmp"
 
 ALIGN 4
 BattleScreen_LeftName:
-#incext Png2Dmp "png/left_name.png" --lz77
+#incbin "dmp/left_name.dmp"
 
 ALIGN 4
 BattleScreen_RightName:
-#incext Png2Dmp "png/right_name.png" --lz77
+#incbin "dmp/right_name.dmp"
 
 ALIGN 4
 BattleScreen_LeftWeapon:
-#incext Png2Dmp "png/left_weapon.png" --lz77
+#incbin "dmp/left_weapon.dmp"
 
 ALIGN 4
 BattleScreen_RightWeapon:
-#incext Png2Dmp "png/right_weapon.png" --lz77
-
-ALIGN 4
-BattleScreen_Palette:
-#incbin "dmp/BattleScreenPalette.dmp"
+#incbin "dmp/right_weapon.dmp"
 
 ALIGN 4
 BattleScreen_TSA1:
@@ -75,8 +71,8 @@ ORG $52028
 POIN BattleScreen_LeftWeapon
 ORG $52164
 POIN BattleScreen_RightWeapon
-ORG $52178
-POIN BattleScreen_Palette
+ORG $802558
+#incbin "dmp/BattleScreenPalette.dmp"
 ORG $51CBC
 POIN BattleScreen_TSA1
 ORG $51CC0

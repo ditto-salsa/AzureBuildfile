@@ -233,3 +233,5 @@ POP
   // Save/Suspend Expansion
     #include "Necessary/ExpandedModularSave/ExModularSave.event"
 
+  #include "ExternalHacks/BattleBGMCustomiser/Installer.event"
+
