@@ -1,0 +1,37 @@
+//Pointer to main stat screen at $88638
+//Pointer to main stat screen palette at $88640
+//Pointer to spinny at $88620
+
+ALIGN 4
+RemoveSpinny:
+#incbin "dmp/RemoveSpinny.dmp"
+
+ALIGN 4
+StatScreenMain:
+#incbin "dmp/StatScreen.dmp"
+
+ALIGN 4
+StatScreenPalette:
+#incbin "dmp/StatScreenPalette.dmp"
+
+PUSH
+
+ORG $88620
+POIN RemoveSpinny
+ORG $88638
+POIN StatScreenMain
+ORG $88640
+POIN StatScreenPalette
+
+//Inline changes
+//Faster Status Screen - Contro
+ORG $A00A48
+BYTE 0x13 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ORG $A00A60
+BYTE 0x13 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+//Disable Stat Screen Platform - Leonarth
+ORG $88354
+BYTE 0x70 0x47
+
+POP

@@ -12,6 +12,8 @@
 
 #include "BattleScreen/Installer.event"
 
+#include "StatScreen/StatScreenInstaller.event"
+
 //Change which portrait the supply uses to JessMug
 PUSH
 ORG 0x9D70E

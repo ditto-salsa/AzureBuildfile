@@ -180,11 +180,15 @@ void EkrPlayMainBGM(void)
         songid = StaffBGMTable[GetItemIndex(gBattleActor.weaponBefore)];
     }
     
-    if (songid != -1)
+
+
+    if (songid == 0xFFFF || songid == GetROMChapterStruct(gPlaySt.chapterIndex)->mapBgmIds[0] || songid == GetROMChapterStruct(gPlaySt.chapterIndex)->mapBgmIds[1] || songid == GetROMChapterStruct(gPlaySt.chapterIndex)->mapBgmIds[2])
     {
-        EfxOverrideBgm(songid, 0x100);
         return;
     }
 
-    gEkrMainBgmPlaying = false;
+    
+    EfxOverrideBgm(songid, 0x100);
+    return;
+
 }
