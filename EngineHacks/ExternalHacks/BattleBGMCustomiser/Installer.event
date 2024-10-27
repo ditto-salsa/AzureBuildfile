@@ -3,31 +3,27 @@
 //Edit stuff here.
 
 //SacredWeaponMusicItemAndBGM(item, song)
-SacredWeaponMusicItemAndBGM(0x85, 0x1F)
-SacredWeaponMusicItemAndBGM(0x92, 0x1F)
+
 
 //IgnoreSacredWeaponMusicUnit(unit)
-IgnoreSacredWeaponMusicUnit(0x40)
-IgnoreSacredWeaponMusicUnit(0x6C)
-IgnoreSacredWeaponMusicUnit(0xBE)
+
 
 //SetStaffBGM(item, song)
-SetStaffBGM(0x4B, 0x22)
-SetStaffBGM(0x4C, 0x22)
-SetStaffBGM(0x4D, 0x22)
-SetStaffBGM(0x4E, 0x22)
-SetStaffBGM(0x4F, 0x22)
-SetStaffBGM(0x50, 0x22)
-SetStaffBGM(0x51, 0x21)
-SetStaffBGM(0x52, 0x21)
-SetStaffBGM(0x53, 0x21)
-SetStaffBGM(0x57, 0x22)
-SetStaffBGM(0x59, 0x22)
-SetStaffBGM(0x8C, 0x22)
+SetStaffBGM(0x4B, 0xFFFF)
+SetStaffBGM(0x4C, 0xFFFF)
+SetStaffBGM(0x4D, 0xFFFF)
+SetStaffBGM(0x4E, 0xFFFF)
+SetStaffBGM(0x4F, 0xFFFF)
+SetStaffBGM(0x50, 0xFFFF)
+SetStaffBGM(0x51, 0xFFFF)
+SetStaffBGM(0x52, 0xFFFF)
+SetStaffBGM(0x53, 0xFFFF)
+SetStaffBGM(0x57, 0xFFFF)
+SetStaffBGM(0x59, 0xFFFF)
+SetStaffBGM(0x8C, 0xFFFF)
 
 //DemonKingMusicSwitch(entry, unit, song, flag)
 //There are only 6 entries (0-5) for each table in this, edit "TablesAndMacros.event" if you need more.
-DemonKingMusicSwitch(0, 0xBE, 0x55, 0x82)
 
 ALIGN 4
 DancerBGM:

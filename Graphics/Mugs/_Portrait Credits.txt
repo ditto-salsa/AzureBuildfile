@@ -1,7 +1,16 @@
-Artist - Portrait(s)
+Portrait - Artist
 
-Scraiza - Celeria, Esther, Lorien(+alt), Orinoco, Serol, Thalia
-Dick Slater - Shino, Samael, Jess, Lazarus
-
-XVI - Elgen
-Sphealnuke - Grantan
+Celeria - Scraiza
+Esther - Scraiza
+Lorien(+alt) - Scraiza 
+Orinoco - Scraiza
+Serol - Scraiza
+Thalia - Scraiza
+Shino - Dick Slater
+Samael - Dick Slater
+Jess - Dick Slater 
+Lazarus - Dick Slater
+Elgen - XVI
+Grantan - Sphealnuke
+Rosa - Flasuban, Nickt, MK404
+Trina - CapibaraInSpace

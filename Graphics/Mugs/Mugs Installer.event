@@ -30,4 +30,8 @@ setMugEntry(0xC, GrantanMug, 3,5,3,3)
 
 setMugEntry(0xD, OrinocoMug, 3,5,3,3)
 
-//setMugEntry(0x64, FuckElvesMug,)
+setMugEntry(0xE, TrinaMug, 3,5,3,3)
+
+setMugEntry(0xF, RosaMug, 3,6,3,4)
+
+setMugEntry(0x64, FuckElvesMug, 2,5,3,3)

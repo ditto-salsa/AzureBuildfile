@@ -1,0 +1,22 @@
+/* VANILLA POINTERS
+
+Main
+- Image Pointer = 0x5B6470 -> 0x5B65C0
+- Palette Pointer = 0x36D2C -> 0x5B6BB4
+
+Preps 1
+- Image Pointer = 0x9A8D8 -> 0xA1B730
+- Palette Pointer = 0x36D2C -> 0x5B6BB4
+
+Preps 2
+- Image Pointer = 0x98468 -> 0xA1B1FC
+- Palette Pointer = 0x98470 -> 0xA1B638
+
+Preps 3
+- Image Pointer = 0xB4E70 -> 0x9AD9F8
+- Palette Pointer = 0x36D2C -> 0x5B6BB4
+
+Preps 4
+- Image Pointer = 0x9C7FC -> 0xA1BAB8
+- Palette Pointer = 0x36D2C -> 0x5B6BB4
+*/

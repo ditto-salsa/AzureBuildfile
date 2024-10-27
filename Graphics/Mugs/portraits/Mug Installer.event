@@ -20,6 +20,13 @@ EstherMug:
 #incbin "Esther_minimug.dmp"
 
 ALIGN 4
+FuckElvesMug:
+#incbin "FuckElves_mug.dmp"
+#incbin "FuckElves_frames.dmp"
+#incbin "FuckElves_palette.dmp"
+#incbin "FuckElves_minimug.dmp"
+
+ALIGN 4
 GrantanMug:
 #incbin "Grantan_mug.dmp"
 #incbin "Grantan_frames.dmp"
@@ -62,6 +69,13 @@ OrinocoMug:
 #incbin "Orinoco_minimug.dmp"
 
 ALIGN 4
+RosaMug:
+#incbin "Rosa_mug.dmp"
+#incbin "Rosa_frames.dmp"
+#incbin "Rosa_palette.dmp"
+#incbin "Rosa_minimug.dmp"
+
+ALIGN 4
 SamaelMug:
 #incbin "Samael_mug.dmp"
 #incbin "Samael_frames.dmp"
@@ -88,4 +102,11 @@ ThaliaMug:
 #incbin "Thalia_frames.dmp"
 #incbin "Thalia_palette.dmp"
 #incbin "Thalia_minimug.dmp"
+
+ALIGN 4
+TrinaMug:
+#incbin "Trina_mug.dmp"
+#incbin "Trina_frames.dmp"
+#incbin "Trina_palette.dmp"
+#incbin "Trina_minimug.dmp"
 
