@@ -23,6 +23,10 @@
     #include "EngineHacks/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
 
+    //Maps
+    #include "Maps/MasterMapInstaller.event"
+    MESSAGE Used maps space ends at currentOffset
+
     //Events
     #include "Events/_EventInstaller.event"
     MESSAGE Used events space ends at currentOffset
@@ -30,16 +34,6 @@
     //Music
     #include "Music/_Music Installer.event"
     MESSAGE Used music space ends at currentOffset
-
-    #define USE_TEST_MAP
-	#ifdef USE_TEST_MAP
-    //Events
-    #include "Events/Release_map.event"
-    #include "Events/WorldMapEvents.event"
-
-    //Maps
-    #include "Maps/MasterMapInstaller.event"
-    #endif // USE_TEST_MAP
 	
 	ASSERT (FreeSpaceEnd - currentOffset) // So that you don't overwrite vanilla tables if using default freespace
 	

@@ -1,0 +1,6 @@
+
+# tmx2ea generated files
+*.event
+
+# Raw map data
+*.dmp
