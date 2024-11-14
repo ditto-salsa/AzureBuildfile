@@ -26,7 +26,7 @@
 #include "Castlevania Order of Ecclesia - Clashing of Waves.event"
 SongTable(0x3,ClashingOfWaves,1)
 
-
+#include "AircaliburEckesachsBindingBladeFix.event"
 
 
 

@@ -1,0 +1,17 @@
+PUSH
+
+//Change poison damage
+ORG 0x25A3E //Minimum poison damage
+BYTE 0x5
+ORG 0x25A36 //Damage Variance (positive)
+BYTE 0x0 //fuck randomness in muh damage
+
+//Change gas trap initial hit damage
+ORG 0x2E33C
+BYTE 0x1
+
+//Uncounterable bitflag does not force long-range animations
+ORG 0x57278
+BYTE 0x16 0xE0
+
+POP

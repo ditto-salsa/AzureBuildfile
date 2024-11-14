@@ -1,0 +1,33 @@
+//Vanilla Tilesets
+#define VanillaFieldsOBJ 0x1
+#define VanillaFieldsPAL 0x38
+#define VanillaFieldsTILE 0x3
+
+#define VanillaCastleOBJ 0x18
+#define VanillaCastlePAL1 0x48
+#define VanillaCastlePAL2 0x57
+#define VanillaCastleTILE 0x1A
+
+#define VanillaFortOBJ 0x3C
+#define VanillaFortPAL1 0x3D
+#define VanillaFortPAL2 0xCE
+#define VanillaFortTILE 0x3E
+
+#define VanillaMountainousOBJ 0x6C
+#define VanillaMountainousPAL1 0x6D
+#define VanillaMountainousPAL2 0xA3
+#define VanillaMountainousTILE 0x6E
+
+#define VanillaTempleOBJ 0x88
+#define VanillaTemplePAL 0x89
+#define VanillaTempleTILE 0x8A
+
+#define VanillaStrongholdOBJ 0x79
+#define VanillaStrongholdPAL 0x7A
+#define VanillaStrongholdTILE 0x7B
+
+//Tile Animation 1
+#define StandardRiverAnim 0x5
+#define CastleWaterAnim 0x1C
+#define StrongholdFireAnim 0x7D
+#define BoatMapWaterAnim 0xD3

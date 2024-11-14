@@ -235,3 +235,6 @@ POP
 
   //BattleBGMCustomiser
   #include "ExternalHacks/BattleBGMCustomiser/Installer.event"
+
+  //Inline Changes
+  #include "Inline/InlineChanges.event"

@@ -1,12 +1,12 @@
 @echo off
 
-@cd %~dp0
+@cd %~dp0\png
 
 @dir *.png /b > png.txt
 
 for /f "tokens=*" %%m in (png.txt) do echo %%m
 
-for /f "tokens=*" %%m in (png.txt) do ..\..\Png2Dmp.exe %%m --lz77
+for /f "tokens=*" %%m in (png.txt) do ..\..\..\EventAssembler\Tools\Png2Dmp.exe %%m --lz77
 
 echo ----------
 

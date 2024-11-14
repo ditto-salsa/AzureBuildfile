@@ -28,9 +28,10 @@
     MESSAGE Used events space ends at currentOffset
 
     //Music
-    #include "Music/Music Installer.event"
+    #include "Music/_Music Installer.event"
     MESSAGE Used music space ends at currentOffset
 
+    #define USE_TEST_MAP
 	#ifdef USE_TEST_MAP
     //Events
     #include "Events/Release_map.event"
@@ -44,7 +45,7 @@
 	
     MESSAGE Used free space ends at currentOffset
 
-    MESSAGE "I should put something funny here"
+    MESSAGE "tilde tilde colon dot pipe colon semicolon tilde tilde"
 #else
     ERROR "You are not assembling FE8 events!"
 #endif
