@@ -238,3 +238,6 @@ POP
 
   //Inline Changes
   #include "Inline/InlineChanges.event"
+
+  //Danger Radius
+  #include "ExternalHacks/DangerRadius/FogDR.event"
