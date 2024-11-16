@@ -1,0 +1,71 @@
+EventPointerTable(0x7,ThisChapter)
+
+setText(0x160, NewChName)
+ALIGN 4
+NewChName:
+String("Ch1: Peacebreaker")
+BYTE 0
+
+
+ALIGN 4
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+Units:
+UNIT Serol SerolLordT1 0x1 Level(3,Ally,0) [2,2] 0 0 0 0 [0x2D,0x6D,0x0,0x0] NoAI 
+UNIT Shino Thief 0x1 Level(7,Ally,0) [1,3] 0 0 0 0 [0x1,0xB,0x6D,0x0] NoAI
+UNIT Jess Supplier 0x1 Level(1,Ally,0) [2,3] 0 0 0 0 [0x14,0x6D,0x0,0x0] NoAI
+UNIT NotTact ShamanF 0x1 Level(2,Ally,0) [3,1] 0 0 0 0 [0x45,0x6D,0x0,0x0] NoAI
+UNIT Samael LancePaladin 0x1 Level(1,Ally,0) [1,2] 0 0 0 0 [0x14,0x6D,0x0,0x0] NoAI
+UNIT
+
+ALIGN 4
+EnemyUnits:
+UNIT 0x68 0x3F 0x68 Level(10,Enemy,1) [4,4] 0 0 0 0 [0x20,0x00,0x00,0x00] AttackInRangeAI
+UNIT
+
+ALIGN 4
+BeginningScene:
+LOAD1 0x0 Units
+LOAD1 0x1 EnemyUnits
+NoFade
+ENDA
+
+EndingScene:
+MNTS 0x1
+NoFade
+ENDA

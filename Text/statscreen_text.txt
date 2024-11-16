@@ -1,7 +1,7 @@
-#0x3B SS_TalkText
+#0x3B SS_TalkText ^
 Talk[X]
 
-## SS_SkillsText
+## SS_SkillsText ^
 Skills[X]
 
 ## SS_TalkRText
@@ -117,3 +117,54 @@ Unit's essence radiates light.[N]
 Unit's essence emanates animus.[N]
 +0.5 Atk, 0.5 Def, 2.5 Avo, and[N]
 2.5 Crit Avo per support rank.[X]
+
+# 0x4FE SS_StrText ^
+Str[X]
+
+## SS_MagText ^
+Magic[X]
+
+# 0x4EC SS_SkillText ^
+Skill[X]
+
+## SS_SpeedText ^
+Speed[X]
+
+## SS_LuckText ^
+Luck[X]
+
+## SS_DefText ^
+Def[X]
+
+## SS_ResText ^
+Res[X]
+
+## SS_AffinityText ^
+Affin[X]
+
+## SS_EquipText ^
+Equip[X]
+
+## SS_AtkText ^
+Attack[X]
+
+## SS_HitText ^
+Hit[X]
+
+## SS_AvoidText ^
+Avoid[X]
+
+## SS_MoveText ^
+Move[X]
+
+## SS_ConText ^
+Con[X]
+
+## SS_AidText ^
+Aid[X]
+
+## SS_TrvText ^
+Trv[X]
+
+## SS_CondText ^
+Cond[X]

@@ -1,3 +1,7 @@
+{
+    #include "Chapter1.event"
+}
+
 PUSH
 //Skip very begining world map - Contro
 ORG $A39768
