@@ -8,7 +8,7 @@ for /f "tokens=*" %%m in (png.txt) do (
 
     echo %%m
 
-    ..\..\..\EventAssembler\Tools\Png2Dmp.exe %%m --lz77 -o %%~nm"-graphics.dmp" -po %%~nm"-palette.dmp"
+    ..\..\..\EventAssembler\Tools\Png2Dmp.exe %%m --lz77 -o %%~nm"-graphics.dmp" -po ..\palettes\input\%%~nm"-palette.dmp"
 
 )
 

@@ -23,6 +23,10 @@
     #include "EngineHacks/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
 
+    //Tilesets (because SPLIT_PTABLE, it must go after Engine Hacks but probably before Maps)
+    #include "Graphics/Tilesets/TilesetInstaller.event"
+    MESSAGE Used tileset space ends at currentOffset
+
     //Maps
     #include "Maps/MasterMapInstaller.event"
     MESSAGE Used maps space ends at currentOffset

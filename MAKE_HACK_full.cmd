@@ -54,6 +54,9 @@ if /I not [%1]==[quick] (
 
   cd "%base_dir%Maps"
   echo: | ("%tmx2ea%" -s -O "MasterMapInstaller.event")
+  
+  cd "%base_dir%Tools\PTABLE_Macro_Fix\
+  PTABLE_Macro_Fix.exe
 
 )
 

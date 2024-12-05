@@ -233,11 +233,14 @@ POP
   // Save/Suspend Expansion
     #include "Necessary/ExpandedModularSave/ExModularSave.event"
 
-  //BattleBGMCustomiser
+  //BattleBGMCustomiser - ditto
   #include "ExternalHacks/BattleBGMCustomiser/Installer.event"
 
-  //Inline Changes
+  //Inline Changes - various, most are FEBuilder patches
   #include "Inline/InlineChanges.event"
 
-  //Danger Radius
+  //Danger Radius - Huichelaar
   #include "ExternalHacks/DangerRadius/FogDR.event"
+
+  //Split_PTABLE - ditto, ASM fix by AuraWolf
+  #include "Necessary/Split_PTABLE/Split_PTABLE.event"

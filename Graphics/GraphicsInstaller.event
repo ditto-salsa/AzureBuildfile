@@ -14,7 +14,7 @@
 
 //#include "MenuUI/Installer.event" //Don't include until UI has been done.
 
-#include "Tilesets/TilesetInstaller.event"
+//#include "Tilesets/TilesetInstaller.event" //Do not uncomment - tilesets are handled seperately but still categorised as graphics.
 
 //Change which portrait the supply uses to JessMug
 PUSH

@@ -1,1 +1,15 @@
 #include "palettes/Installer.event"
+
+ALIGN 4; Super_Fields_OBJ:
+#incbin "dmp/Super_Fields-graphics.dmp"
+
+ALIGN 4; Super_Fields_PAL:
+#incbin "palettes/output/Super_Fields-palette.dmp"
+
+ALIGN 4; Super_Fields_CONFIG:
+#incbin "dmp/Super_Fields-mapchip.dmp"
+
+
+SetTilesetObject(0x1, Super_Fields_OBJ)
+SetTilesetPalette(0x1, Super_Fields_PAL)
+SetTilesetConfig(0x1, Super_Fields_CONFIG)

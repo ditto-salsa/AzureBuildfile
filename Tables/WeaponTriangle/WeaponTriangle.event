@@ -1,0 +1,46 @@
+/* Repointing */ PUSH; ORG 0x2C7CC; POIN NewWeaponTriangle; POP
+
+#define WTSword 0x00
+#define WTLance 0x01
+#define WTAxe 0x02
+#define WTBow 0x03
+#define WTStaff 0x04
+#define WTAnima 0x05
+#define WTLight 0x06
+#define WTDark 0x07
+
+#define HitWT 0x19
+#define DmgWT 0x04
+#define NegHitWT 0xE7
+#define NegDmgWT 0xFC
+
+ALIGN 4
+NewWeaponTriangle:
+//Sword
+BYTE WTSword WTLance NegHitWT NegDmgWT
+BYTE WTSword WTAxe HitWT DmgWT
+
+//Lance
+BYTE WTLance WTAxe NegHitWT NegHitWT
+BYTE WTLance WTSword HitWT DmgWT
+
+//Axe
+BYTE WTAxe WTSword NegHitWT NegDmgWT
+BYTE WTAxe WTLance HitWT DmgWT
+
+//Anima
+BYTE WTAnima WTDark NegHitWT NegDmgWT
+BYTE WTAnima WTLight HitWT DmgWT
+
+//Light
+BYTE WTLight WTAnima NegHitWT NegDmgWT
+BYTE WTLight WTDark HitWT DmgWT
+
+//Dark
+BYTE WTDark WTLight NegHitWT NegDmgWT
+BYTE WTDark WTAnima HitWT DmgWT
+
+//Bow
+BYTE WTBow WTAnima HitWT DmgWT
+BYTE WTBow WTLight HitWT DmgWT
+BYTE WTBow WTDark HitWT DmgWT
