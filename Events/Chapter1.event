@@ -31,7 +31,6 @@ LocationBasedEvents:
 END_MAIN
 
 MiscBasedEvents:
-
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -45,11 +44,27 @@ TrapData:
 ENDTRAP
 
 ALIGN 4
+NotTactGenderMenu:
+	SHORT 0xB510 0x1C04 0x4B10 0x469E 0xF800 0x4A10 0x7850 0x2101 0x4308 0x2102 0x4308 0x2104 0x4308 0x2108 0x4308 0x2110 0x4308 0x7050 0x2000 0x4B0A 0x469E 0xF800 0x4B09 0x469E 0xF800 0x4B09 0x469E 0xF800 0x4809 0x1C21 0x4B07 0x469E 0xF800 0xBC10 0xBC01 0x4700 0xE884 0x0804 0x3080 0x0300 0x3D38 0x0800 0x43A8 0x0800 0xEB68 0x0804 0xEBC8 0x0804
+	POIN NotTactGenderMenuDefinition
+
+NotTactGenderMenuDefinition:
+	BYTE 6 3 18 0           // Geomerty, order: X, Y, Width, Height (Height doesn't matter)
+	WORD 1                  // style (change it if u want)
+	POIN NotTactGenderMenuCommandDefinition // Command Definitions
+	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
+
+NotTactGenderMenuCommandDefinition:
+	EventMenuCommand(NotTactGenderMenu_Feminine)
+    EventMenuCommand(NotTactGenderMenu_Masculine)
+EventMenuCommandEnd
+
+ALIGN 4
 Units:
-UNIT Serol SerolLordT1 0x1 Level(3,Ally,0) [2,2] 0 0 0 0 [0x2D,0x6D,0x0,0x0] NoAI 
-UNIT Shino Thief 0x1 Level(7,Ally,0) [1,3] 0 0 0 0 [0x1,0xB,0x6D,0x0] NoAI
+UNIT Serol SerolLordT1 0x1 Level(3,Ally,0) [2,2] 0 0 0 0 [IronBow,Vuln,0x0,0x0] NoAI 
+UNIT Shino Thief 0x1 Level(7,Ally,0) [1,3] 0 0 0 0 [ShortSword,0xB,Vuln,0x0] NoAI
 UNIT Jess Supplier 0x1 Level(1,Ally,0) [2,3] 0 0 0 0 [0x14,0x6D,0x0,0x0] NoAI
-UNIT NotTact ShamanF 0x1 Level(2,Ally,0) [3,1] 0 0 0 0 [0x45,0x6D,0x0,0x0] NoAI
+//UNIT NotTact 0 0x1 Level(2,Ally,0) [3,1] 0 0 0 0 [0x45,0x6D,0x0,0x0] NoAI
 UNIT Samael LancePaladin 0x1 Level(1,Ally,0) [1,2] 0 0 0 0 [0x14,0x6D,0x0,0x0] NoAI
 UNIT
 
@@ -59,7 +74,75 @@ UNIT 0x68 0x3F 0x68 Level(10,Enemy,1) [4,4] 0 0 0 0 [0x20,0x00,0x00,0x00] Attack
 UNIT
 
 ALIGN 4
+CutsceneOomfs:
+UNIT Lorien LorienLord Lorien Level(30,Enemy,0) [12,5] 0 0 0 0 [SoulOfRuin, 0x0, 0x0, 0x0] NoAI
+UNIT Lazarus SageF Lorien Level(24,Enemy,0) [13,4] 0 0 0 0 [Apollo, 0x0, 0x0, 0x0] NoAI
+UNIT
+
+ALIGN 4
+NotTactF_Placement:
+UNIT NotTactF ShamanF Lorien Level(1,Enemy,0) [0,12] 0 0 1 REDA12R12 [Shadowbreak, Collapse, 0x0, 0x0] NoAI
+UNIT
+
+ALIGN 4
+NotTactM_Placement:
+UNIT NotTactM ShamanM Lorien Level(1,Enemy,0) [0,12] 0 0 1 REDA12R12 [Shadowbreak, Collapse, 0x0, 0x0] NoAI
+UNIT
+
+ALIGN 4
 BeginningScene:
+
+STAL 20
+SCOORD sB [13, 9]
+LOMA 0x3F //Go to the Lorien Realm Cutscene Map
+
+LOAD1 0x1 CutsceneOomfs; ENUN //Load Lorien, Lazarus
+FADU 16 //Fade in
+CURSOR Lorien //Put a cursor on Lorien before he speaks
+STAL 20
+REMOVE_CURSORS
+Text(Ch1_StepForward) //Make Lorien speak (to NotTact)
+
+SVAL sB 0xFFFFFFFF
+TUTORIALTEXTBOXSTART
+TEXTSHOW Ch1_AskHowNotTactPresents
+TEXTEND
+REMA
+
+ASMC NotTactGenderMenu //Allow player to choose how NotTact presents.
+BNE 0 sC s0 //If Masc, goto 0
+    LOAD1 0x1 NotTactF_Placement; ENUN
+    ENUT 0x66 //Female NotTact flag on
+    GOTO 1
+LABEL 0
+    LOAD1 0x1 NotTactM_Placement; ENUN
+LABEL 1
+STAL 10
+
+CHECK_EVENTID 0x66
+BEQ 2 sC s0 //If Male, goto 2
+Text(Ch1_LorienAskNotTactName_F)
+BYTE $21 $1A $00 $00 $41 $0D $00 $00 $81 $82 $04 $08 $20 $22 $00 $00 //Call Name entry screen
+Text(Ch1_NotTactNameAnnounce_F)
+FADI 16
+SOUN 0x2C1 //Aura start
+SOUN 0x2C2 //Aura mid
+SOUN 0x2C3 //Aura end
+GOTO 3
+
+LABEL 2
+Text(Ch1_LorienAskNotTactName_M)
+BYTE $21 $1A $00 $00 $41 $0D $00 $00 $81 $82 $04 $08 $20 $22 $00 $00 //Call Name entry screen
+Text(Ch1_NotTactNameAnnounce_M)
+FADI 16
+SOUN 0x2C1 //Aura start
+SOUN 0x2C2 //Aura mid
+SOUN 0x2C3 //Aura end
+LABEL 3
+
+LOMA 0x00 //Return to actual chapter map
+FADU 16
+STAL 30
 LOAD1 0x0 Units; ENUN
 LOAD1 0x1 EnemyUnits; ENUN
 NoFade

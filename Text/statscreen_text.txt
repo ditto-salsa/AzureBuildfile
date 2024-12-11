@@ -146,7 +146,7 @@ Affin[X]
 Equip[X]
 
 ## SS_AtkText ^
-Attack[X]
+Atk[X]
 
 ## SS_HitText ^
 Hit[X]

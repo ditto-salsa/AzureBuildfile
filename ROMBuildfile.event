@@ -9,6 +9,8 @@
 
     //Text first for Text ID definitions
     #include "Text/InstallTextData.event"
+    #define NotTactName 0x50
+    /* Set NotTactName to gPlaySt.play_name in RAM with Anti-Huffman flag set */ PUSH; ORG TextTable + NotTactName * 4; WORD 0x202BD10 | 0x8000000; POP
     MESSAGE Used text space ends at currentOffset
 
     //Graphics
@@ -24,7 +26,7 @@
     MESSAGE Used hax space ends at currentOffset
 
     //Tilesets (because SPLIT_PTABLE, it must go after Engine Hacks but probably before Maps)
-    #include "Graphics/Tilesets/TilesetInstaller.event"
+    #include "Graphics/Tilesets/_TilesetInstaller.event"
     MESSAGE Used tileset space ends at currentOffset
 
     //Maps

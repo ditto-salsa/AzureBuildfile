@@ -21,7 +21,7 @@ BYTE WTSword WTLance NegHitWT NegDmgWT
 BYTE WTSword WTAxe HitWT DmgWT
 
 //Lance
-BYTE WTLance WTAxe NegHitWT NegHitWT
+BYTE WTLance WTAxe NegHitWT NegDmgWT
 BYTE WTLance WTSword HitWT DmgWT
 
 //Axe

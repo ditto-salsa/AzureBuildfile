@@ -1,4 +1,3 @@
-
 #include "portraits/Mug Installer.event"
 
 //the current setup is less buggy than the previous one but doesn't automatically generate pos frames
@@ -7,31 +6,54 @@
 
 //This is a standard mug entry macro. The format is setMugEntry(portraitID, the reference to the portrait label, x mouth coord, y mouth coord, x eye coord, y eye coord)
 setMugEntry(0x2, SerolMug, 3,5,3,3)
+#define Serol_Mug 0x2
 
 setMugEntry(0x3, ThaliaMug, 3,5,3,3)
+#define Thalia_Mug 0x3
 
 setMugEntry(0x4, SamaelMug, 3,5,3,3)
+#define Samael_Mug 0x4
 
 setMugEntry(0x5, ShinoMug, 3,6,3,4)
+#define Shino_Mug 0x5
 
 setMugEntry(0x6, ElgenMug, 4,6,4,4)
+#define Elgen_Mug 0x6
 
 setMugEntry(0x7, CeleriaMug, 4,6,3,4)
+#define Celeria_Mug 0x7
 
 setMugEntry(0x8, JessMug, 3,6,3,4)
+#define Jess_Mug 0x8
 
 setMugEntry(0x9, EstherMug, 3,5,3,3)
+#define Esther_Mug 0x9
 
 setMugEntry(0xA, LorienMug, 2,5,3,3)
+#define Lorien_Mug 0xA
 
 setMugEntry(0xB, LorienAltMug, 2,5,3,3)
+#define LorienAlt_Mug 0xB
 
 setMugEntry(0xC, GrantanMug, 3,5,3,3)
+#define Grantan_Mug 0xC
 
 setMugEntry(0xD, OrinocoMug, 3,5,3,3)
+#define Orinoco_Mug 0xD
 
 setMugEntry(0xE, TrinaMug, 3,5,3,3)
+#define Trina_Mug 0xE
 
 setMugEntry(0xF, RosaMug, 3,6,3,4)
+#define Rosa_Mug 0xF
+
+setMugEntry(0x10, LazarusMug, 3,5,3,3)
+#define Lazarus_Mug 0x10
+
+//setMugEntry(0x11, NotTactFMug,)
+#define NotTactF_Mug 0x11
+
+//setMugEntry(0x12, NotTactMMug,)
+#define NotTactM_Mug 0x12
 
 setMugEntry(0x64, FuckElvesMug, 2,5,3,3)

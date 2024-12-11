@@ -1,0 +1,8 @@
+ALIGN 4; Super_Fields_OBJ:
+#incbin "dmp/Super_Fields-graphics.dmp"
+
+ALIGN 4; Super_Fields_PAL:
+#incbin "palettes/output/Super_Fields-palette.dmp"
+
+ALIGN 4; Super_Fields_CONFIG:
+#incbin "dmp/Super_Fields-config.dmp"

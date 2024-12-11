@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="21" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
  <properties>
-	<property name="Main" value=""/>
+  <property name="Main" value=""/>
  </properties>
- <tileset firstgid="1" name="01003803" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="01000203.png" width="512" height="512"/>
+ <tileset firstgid="1" name="Super Field" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Super Fields.png" width="512" height="512"/>
  </tileset>
  <layer id="1" name="Tile Layer 1" width="21" height="10">
- <properties>
-  <property name="Anims1" value="1"/>
-  <property name="Anims2" value="0"/>
-  <property name="ChapterID" value="0"/>
-  <property name="Main" value=""/>
-  <property name="MapID" value="1"/>
-  <property name="ObjectType" value="1"/>
-  <property name="PaletteID" value="2"/>
-  <property name="TileConfig" value="1"/>
-  <property name="MapChangesID" value="1"/>
- </properties>
+  <properties>
+   <property name="Anims1" value="1"/>
+   <property name="Anims2" value="0"/>
+   <property name="ChapterID" value="0"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="1"/>
+   <property name="MapID" value="1"/>
+   <property name="ObjectType" value="1"/>
+   <property name="PaletteID" value="2"/>
+   <property name="TileConfig" value="1"/>
+  </properties>
   <data encoding="csv">
 648,655,783,68,721,808,809,810,629,631,68,68,785,815,815,915,68,852,853,854,68,
 686,68,68,68,68,840,841,842,68,600,631,68,805,945,815,947,68,884,885,886,933,

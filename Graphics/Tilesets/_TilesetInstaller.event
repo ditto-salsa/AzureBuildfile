@@ -1,0 +1,13 @@
+#include "palettes/Installer.event"
+
+#include "Super_Fields.event"
+SetTilesetObject(0x1, Super_Fields_OBJ)
+SetTilesetPalette(0x1, Super_Fields_PAL)
+SetTilesetConfig(0x1, Super_Fields_CONFIG)
+
+#include "Pandemonium.event"
+SetTilesetObject(0x2, Pandemonium_OBJ)
+SetTilesetPalette(0x19, Pandemonium_PAL)
+SetTilesetPalette(0x1A, Pandemonium_PAL2)
+SetTilesetConfig(0x2, Pandemonium_CONFIG)
+SetTileAnim(0x7, Pandemonium_ANIM1)
