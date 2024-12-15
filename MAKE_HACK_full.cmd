@@ -38,23 +38,31 @@ if /I not [%1]==[quick] (
   @rem only do the following if this isn't a make hack quick
 
   echo:
-  echo Processing tables
+  echo: Processing table definitions...
+
+  cd "%base_dir%"
+  Tools\CSVDefCreator\CSVDefCreator.exe Definitions\ Tables\NightmareModules\CharactersClasses\CharacterTable.csv 
+
+  echo:
+  echo Processing tables...
 
   cd "%base_dir%Tables"
   echo: | ("%c2ea%" "%source_rom%" -installer "%base_dir%Tables/TableInstaller.event")
 
   echo:
-  echo Processing text
+  echo Processing text...
 
   cd "%base_dir%Text"
   echo: | ("%textprocess%" text_buildfile.txt --parser-exe "%parsefile%" --installer "InstallTextData.event" --definitions "TextDefinitions.event")
 
   echo:
-  echo Processing maps
+  echo Processing maps...
 
   cd "%base_dir%Maps"
   echo: | ("%tmx2ea%" -s -O "MasterMapInstaller.event")
   
+  echo:
+  echo Fixing tmx2ea's macros...
   cd "%base_dir%Tools\PTABLE_Macro_Fix\
   PTABLE_Macro_Fix.exe
 
