@@ -38,7 +38,7 @@ if /I not [%1]==[quick] (
   @rem only do the following if this isn't a make hack quick
 
   echo:
-  echo: Processing table definitions...
+  echo: Creating definitions from tables...
 
   cd "%base_dir%"
   Tools\CSVDefCreator\CSVDefCreator.exe Definitions\ Tables\NightmareModules\CharactersClasses\CharacterTable.csv 
