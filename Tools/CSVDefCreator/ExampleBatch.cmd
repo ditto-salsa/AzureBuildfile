@@ -7,5 +7,5 @@ cd ..\..\
 @rem Usage: CSVDefCreator.exe PathToDefinitionsFolder PathToTable PathToTable PathToTable...
 Tools\CSVDefCreator\CSVDefCreator.exe Definitions\ Tables\NightmareModules\CharactersClasses\CharacterTable.csv
 
-@rem pause because executable doesn't automatically pause from expected execution; means it can be used in MAKE_HACK processes.
+@rem pause because executable doesn't automatically pause from expected execution; means it can be used in MAKE_HACK processes if you're so inclined.
 pause

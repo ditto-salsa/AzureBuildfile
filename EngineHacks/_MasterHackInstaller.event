@@ -37,9 +37,6 @@ ORG FreeSpaceBLRange //defined in custom definitions
   //Hold L to toggle Anims
   #include "QualityOfLife/LToggle/LToggle.event"
 
-  //negative wt/crit
-  #include "QualityOfLife/NegativeWStatDisplay/NegativeDisplay.event"
-
   //clears the gamble/lunge/mercy when cancelling out of attack menu
   Unset_Attack_Flag:
   #incbin "SkillSystem/Internals/unset_attack_flag.dmp"
@@ -244,3 +241,6 @@ POP
 
   //Split_PTABLE - ditto, ASM fix by AuraWolf
   #include "Necessary/Split_PTABLE/Split_PTABLE.event"
+
+  //AutoRepairItems - Retina
+  #include "ExternalHacks/AutoRepairItems/Installer.event"

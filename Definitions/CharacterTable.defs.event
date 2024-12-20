@@ -23,7 +23,7 @@
 #define Marisa 0x16
 #define Saleh 0x17
 #define Ewan 0x18
-#define L'Arachel 0x19
+// #define L'Arachel 0x19
 #define Dozla 0x1A
 // #define - 0x1B
 #define Rennac 0x1C
@@ -58,8 +58,8 @@
 // #define - 0x39
 // #define - 0x3A
 // #define Lyon's Summon 0x3B
-#define <Summon> 0x3C
-#define <'Summonern'> 0x3D
+// #define <Summon> 0x3C
+// #define <'Summonern'> 0x3D
 // #define Knoll's Summon 0x3E
 // #define Ewan's Summon 0x3F
 #define Lyon 0x40

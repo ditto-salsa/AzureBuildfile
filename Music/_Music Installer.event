@@ -23,7 +23,7 @@
 #define MapMusicGroup 1
 #define SFXGroup 6
 
-#include "Castlevania Order of Ecclesia - Clashing of Waves.event"
+#include "ea/Clashing_Of_Waves.event"
 SongTable(0x3,ClashingOfWaves,1)
 
 #include "AircaliburEckesachsBindingBladeFix.event"

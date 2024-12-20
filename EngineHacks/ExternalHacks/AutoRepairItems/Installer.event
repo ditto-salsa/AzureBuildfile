@@ -1,0 +1,12 @@
+#include "PerChapterItems.lyn.event"
+
+ALIGN 4
+ConvoySize_Link:
+WORD 200
+
+ALIGN 4
+PerChapterItemsList:
+BYTE 0x1
+BYTE 0 // terminator
+
+#include "StaffUsability.lyn.event"

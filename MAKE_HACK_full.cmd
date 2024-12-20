@@ -63,8 +63,15 @@ if /I not [%1]==[quick] (
   
   echo:
   echo Fixing tmx2ea's macros...
+  
   cd "%base_dir%Tools\PTABLE_Macro_Fix\
   PTABLE_Macro_Fix.exe
+
+  echo:
+  echo Processing music...
+  
+  cd "%base_dir%Music"
+  call MusicProcessor.bat
 
 )
 

@@ -3,7 +3,7 @@ SetChapterEvents(0x1, ThisChapter)
 setText(0x160, NewChName)
 ALIGN 4
 NewChName:
-String("Ch1: Peacebreaker")
+String("Ch1: Recapture!")
 BYTE 0
 
 
@@ -55,8 +55,8 @@ NotTactGenderMenuDefinition:
 	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
 
 NotTactGenderMenuCommandDefinition:
-	EventMenuCommand(NotTactGenderMenu_Feminine)
-    EventMenuCommand(NotTactGenderMenu_Masculine)
+	EventMenuCommand(Ch1_NotTactGenderMenu_Feminine)
+    EventMenuCommand(Ch1_NotTactGenderMenu_Masculine)
 EventMenuCommandEnd
 
 ALIGN 4
@@ -103,11 +103,7 @@ STAL 20
 REMOVE_CURSORS
 Text(Ch1_StepForward) //Make Lorien speak (to NotTact)
 
-SVAL sB 0xFFFFFFFF
-TUTORIALTEXTBOXSTART
-TEXTSHOW Ch1_AskHowNotTactPresents
-TEXTEND
-REMA
+TutorialTextBox(Ch1_AskHowNotTactPresents)
 
 ASMC NotTactGenderMenu //Allow player to choose how NotTact presents.
 BNE 0 sC s0 //If Masc, goto 0

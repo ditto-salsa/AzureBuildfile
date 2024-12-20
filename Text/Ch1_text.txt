@@ -1,23 +1,15 @@
 ## Ch1_StepForward
 [R][LoadLorienRight][FR][LoadLazarus]
-[R]I grow bored of these pallid,[n]
-repeatitive freaks rolling in.[an]
-Processing them all is worth it,
-but it is damningly menial.[an]
-Eh, it's what I need to do,[n]
-and I'll have what fun I can.[an]
-[ToggleSmile]
-Next one! Come forward![an]
-Your master wishes to gaze[n]
-upon your artificial visage![ToggleSmile][A][X]
+[R]Ah, Lazarus.[an]
+I love filler text.[a][X]
 
 ## Ch1_AskHowNotTactPresents
 How shall they present themselves?[A][X]
 
-## NotTactGenderMenu_Feminine
+## Ch1_NotTactGenderMenu_Feminine
 Feminine.[X]
 
-## NotTactGenderMenu_Masculine
+## Ch1_NotTactGenderMenu_Masculine
 Masculine.[X]
 
 ## Ch1_LorienAskNotTactName_F
@@ -38,44 +30,41 @@ No- Urgh.[an]
 Who am I again?)[a][ToggleMouthMove][X]
 
 ## Ch1_NotTactNameAnnounce_F
-[ML][LoadNotTactF][FR][LoadLazarus][R][LoadLorien]
+[ML][LoadNotTactF]
+[ML]([Tact]'ll do.)
+[FR][LoadLazarus][R][LoadLorienRight]
 [ML]My name is [Tact].[n]
 I won't be referred to as a number.[an]
 [R]A fiesty one, eh?[an]
 You've just made your[n]
 first assignment hell.[an]
 Hm[Beat] Where to[n]
-send you to?[Beat][a][X]
+send you to?[Beat][an]
 [ML][ToggleMouthMove](Oh... This is not[n]
 looking up for me,[an]
 is it? Haahhh...)[a][ToggleMouthMove][X]
 
 ## Ch1_LorienAskNotTactName_M
 [R][LoadLorienRight][FR][LoadLazarus][ML][LoadNotTactM]
-[R]More of the same,[n]
-how unfortunate.[an]
-Should this one have[n]
-been named already,[an]
-Lazarus?[an]
-[FR][Beat]This one has no name.[an]
-Presumably it is just [n]
-a new creation.[an]
-Hm[Beat][n]
-Lazarus, next number.[an]
+[R]I do this to myself, don't I?[an]
+I really should get Griss to[n]
+do this instead of us.[an]
 [R][ClearFace][FR][ClearFace]
 [ML][ToggleMouthMove](I am[Beat][n]
 No- Urgh.[an]
 Who am I again?)[a][ToggleMouthMove][X]
 
 ## Ch1_NotTactNameAnnounce_M
-[ML][LoadNotTactM][FR][LoadLazarus][R][LoadLorien]
+[ML][LoadNotTactM]
+[ML]([Tact]'ll do.)
+[FR][LoadLazarus][R][LoadLorienRight]
 [ML]My name is [Tact].[n]
 I won't be referred to as a number.[an]
 [R]A fiesty one, eh?[an]
 You've just made your[n]
 first assignment hell.[an]
 Hm[Beat] Where to[n]
-send you to?[Beat][a][X]
+send you to?[Beat][an]
 [ML][ToggleMouthMove](Oh... This is not[n]
 looking up for me,[an]
 is it? Haahhh...)[a][ToggleMouthMove][X]
