@@ -1,3 +1,6 @@
+//dear god
+#include "Split_PTABLE/Split_PTABLE.event"
+
 #include "palettes/Installer.event"
 
 #include "Super_Fields.event"
@@ -11,3 +14,10 @@ SetTilesetPalette(0x19, Pandemonium_PAL)
 SetTilesetPalette(0x1A, Pandemonium_PAL2)
 SetTilesetConfig(0x2, Pandemonium_CONFIG)
 SetTileAnim(0x7, Pandemonium_ANIM1)
+
+#include "CastleV2.event"
+SetTilesetObject(0x3, CastleV2_OBJ)
+SetTilesetPalette(0x1B, CastleV2_PAL)
+SetTilesetPalette(0x1C, CastleV2_PAL2)
+SetTilesetConfig(0x3, CastleV2_CONFIG)
+SetTileAnim(0x8, CastleV2_ANIM1)

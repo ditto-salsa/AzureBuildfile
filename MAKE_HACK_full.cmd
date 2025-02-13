@@ -22,6 +22,7 @@ set "ups=%~dp0Tools\ups\ups"
 set "parsefile=%~dp0EventAssembler\Tools\ParseFileUTF8.exe"
 set "tmx2ea=%~dp0Tools\tmx2ea\tmx2ea.exe"
 set symcombo=%~dp0Tools\sym\SymCombo.exe
+set "CSVDefCreator=%~dp0Tools\CSVDefCreator\CSVDefCreator.exe"
 
 @rem set %~dp0 into a variable because batch is stupid and messes with it when using conditionals?
 
@@ -38,10 +39,10 @@ if /I not [%1]==[quick] (
   @rem only do the following if this isn't a make hack quick
 
   echo:
-  echo: Creating definitions from tables...
+  echo Creating definitions from tables...
 
   cd "%base_dir%"
-  Tools\CSVDefCreator\CSVDefCreator.exe Definitions\ Tables\NightmareModules\CharactersClasses\CharacterTable.csv 
+  %CSVDefCreator% Definitions\ Tables\NightmareModules\CharactersClasses\CharacterTable.csv Tables\NightmareModules\CharactersClasses\ClassTable.csv
 
   echo:
   echo Processing tables...
@@ -66,12 +67,6 @@ if /I not [%1]==[quick] (
   
   cd "%base_dir%Tools\PTABLE_Macro_Fix\
   PTABLE_Macro_Fix.exe
-
-  echo:
-  echo Processing music...
-  
-  cd "%base_dir%Music"
-  call MusicProcessor.bat
 
 )
 

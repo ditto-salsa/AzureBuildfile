@@ -1,0 +1,36 @@
+ALIGN 4
+NewSoundRoom:
+FILL 256*16 //Each entry is 4 words long (wasteful imo)
+#define Soundroom(index,songID,songLength,songName) "PUSH; ORG NewSoundRoom + (index*16); WORD songID songLength 0 songName; POP"
+#define ASMSoundroom(index,songID,songLength,displayCondASM,songName) "PUSH; ORG NewSoundRoom + (index*16); WORD songID songLength; POIN displayCondASM; WORD songName; POP"
+
+Soundroom(1,0x9,9999,PointOfNoReturn_Text)
+Soundroom(2,0xC,9999,Sky_Peak_Final_Pass_Text)
+Soundroom(3,0xD,9999,The_One_They_Call_Witch_Text)
+
+
+//Repointing
+PUSH
+ORG $1BC14
+POIN NewSoundRoom
+ORG $1BCC4
+POIN NewSoundRoom
+ORG $AECA8
+POIN NewSoundRoom
+ORG $AECD0
+POIN NewSoundRoom
+ORG $AED2C
+POIN NewSoundRoom
+ORG $AEEBC
+POIN NewSoundRoom
+ORG $AF438
+POIN NewSoundRoom
+ORG $AF830
+POIN NewSoundRoom
+ORG $AFE30
+POIN NewSoundRoom
+ORG $B0080
+POIN NewSoundRoom
+ORG $B042C
+POIN NewSoundRoom
+POP

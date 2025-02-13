@@ -11,12 +11,13 @@ ALIGN 4; Pandemonium_CONFIG:
 #incbin "dmp/Pandemonium-config.dmp"
 
 ALIGN 8; Pandemonium_ANIM1:
-BYTE 0x1C 0x00 0x00 0x10; POIN Pandemonium_ANIM1_1
-BYTE 0x1C 0x00 0x00 0x10; POIN Pandemonium_ANIM1_2
-BYTE 0x1C 0x00 0x00 0x10; POIN Pandemonium_ANIM1_3
-BYTE 0x1C 0x00 0x00 0x10; POIN Pandemonium_ANIM1_4
-BYTE 0x1C 0x00 0x00 0x10; POIN Pandemonium_ANIM1_5
-BYTE 0x1C 0x00 0x00 0x10; POIN Pandemonium_ANIM1_6
+//interval, size, POIN
+SHORT 0x1C 0x1000; POIN Pandemonium_ANIM1_1
+SHORT 0x1C 0x1000; POIN Pandemonium_ANIM1_2
+SHORT 0x1C 0x1000; POIN Pandemonium_ANIM1_3
+SHORT 0x1C 0x1000; POIN Pandemonium_ANIM1_4
+SHORT 0x1C 0x1000; POIN Pandemonium_ANIM1_5
+SHORT 0x1C 0x1000; POIN Pandemonium_ANIM1_6
 WORD 0 0
 
 ALIGN 4; Pandemonium_ANIM1_1:

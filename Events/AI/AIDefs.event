@@ -1,0 +1,2 @@
+#define AIExit(id) "BYTE $03 0 $FF id 0 0 0 0 0 0 0 0 0 0 0 0"
+#define AIDoNotAttack(probability,pointer) "BYTE $05 probability $FF 0 0 0 0 0; POIN pointer; WORD 0"

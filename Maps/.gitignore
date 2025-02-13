@@ -4,3 +4,6 @@
 
 # Raw map data
 *.dmp
+
+# tsx files (png is enough)
+*.tsx

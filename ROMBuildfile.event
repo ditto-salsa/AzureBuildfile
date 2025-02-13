@@ -5,9 +5,8 @@
 
     ORG FreeSpace
 
-    #include "Text/repointedTextTable.event"
-
     //Text first for Text ID definitions
+    #include "repointedTextTable.event"
     #include "Text/InstallTextData.event"
     #define NotTactName 0x50
     /* Set NotTactName to gPlaySt.play_name in RAM with Anti-Huffman flag set */ PUSH; ORG TextTable + NotTactName * 4; WORD 0x202BD10 | 0x8000000; POP
@@ -20,14 +19,14 @@
     //CSV tables
     #include "Tables/TableInstaller.event"
     MESSAGE Used table space ends at currentOffset
+	
+	//Music
+    #include "Music/_Music Installer.event"
+    MESSAGE Used music space ends at currentOffset
 
     //Engine Hacks
     #include "EngineHacks/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
-
-    //Tilesets (because SPLIT_PTABLE, it must go after Engine Hacks but probably before Maps)
-    #include "Graphics/Tilesets/_TilesetInstaller.event"
-    MESSAGE Used tileset space ends at currentOffset
 
     //Maps
     #include "Maps/MasterMapInstaller.event"
@@ -36,10 +35,6 @@
     //Events
     #include "Events/_EventInstaller.event"
     MESSAGE Used events space ends at currentOffset
-
-    //Music
-    #include "Music/_Music Installer.event"
-    MESSAGE Used music space ends at currentOffset
 	
 	ASSERT (FreeSpaceEnd - currentOffset) // So that you don't overwrite vanilla tables if using default freespace
 	

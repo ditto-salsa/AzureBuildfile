@@ -1,0 +1,15 @@
+ALIGN 4
+NewAI1Table:
+#incbin "VanillaAI1Pointers.dmp"
+FILL 14*4
+#define AI1(index, pointer) "PUSH; ORG NewAI1Table + (index*4); POIN pointer; POP"
+
+//Repointing
+PUSH
+ORG 0x5A91E4
+POIN NewAI1Table
+ORG 0x5A91E8
+POIN NewAI1Table
+ORG 0x5A91EC
+POIN NewAI1Table
+POP

@@ -1,19 +1,19 @@
 //Event file generated from Sappy .s format.
         #include "MPlayDef.event"
 
-        #define    rffield_grp  voicegroup000
-        #define    rffield_pri  0
-        #define    rffield_rev  0
-        #define    rffield_key  0
+        #define    rffield_Song_grp  voicegroup000
+        #define    rffield_Song_pri  0
+        #define    rffield_Song_rev  0
+        #define    rffield_Song_key  0
 
         // .rodata
-        // rffield
-        .align  2
+        // rffield_Song
+        ALIGN 4
 
 //****************** Track 0 (Midi-Chn.0) ******************//
 
-rffield_0:
-        BYTE   KEYSH   rffield_key+0
+rffield_Song_0:
+        BYTE   KEYSH   rffield_Song_key+0
 // 000   ----------------------------------------
         BYTE   TEMPO   122/2
         BYTE           VOICE   71
@@ -21,7 +21,7 @@ rffield_0:
         BYTE           PAN     c_v-10
         BYTE   W96
 // 001   ----------------------------------------
-rffield_0_LOOP:
+rffield_Song_0_LOOP:
         BYTE   W96
 // 002   ----------------------------------------
         BYTE   W96
@@ -42,7 +42,7 @@ rffield_0_LOOP:
 // 010   ----------------------------------------
         BYTE   W96
 // 011   ----------------------------------------
-rffield_0_11:
+rffield_Song_0_11:
         BYTE           N02     Ds5   v045
         BYTE   W03
         BYTE                   Fn5   v052
@@ -81,7 +81,7 @@ rffield_0_11:
         BYTE   W06
         BYTE   PEND
 // 012   ----------------------------------------
-rffield_0_12:
+rffield_Song_0_12:
         BYTE           N05     As5   v045
         BYTE   W06
         BYTE                   Gs5
@@ -101,10 +101,10 @@ rffield_0_12:
         BYTE   W96
 // 019   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_0_11
+         POIN2  rffield_Song_0_11
 // 020   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_0_12
+         POIN2  rffield_Song_0_12
 // 021   ----------------------------------------
         BYTE   W96
 // 022   ----------------------------------------
@@ -123,20 +123,20 @@ rffield_0_12:
         BYTE   W96
 // 029   ----------------------------------------
         BYTE   GoTo
-         POIN2  rffield_0_LOOP
+         POIN2  rffield_Song_0_LOOP
         BYTE   FINE
 
 //****************** Track 1 (Midi-Chn.1) ******************//
 
-rffield_1:
-        BYTE   KEYSH   rffield_key+0
+rffield_Song_1:
+        BYTE   KEYSH   rffield_Song_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   46
         BYTE           VOL     127
         BYTE           PAN     c_v+15
         BYTE   W96
 // 001   ----------------------------------------
-rffield_1_LOOP:
+rffield_Song_1_LOOP:
         BYTE   W96
 // 002   ----------------------------------------
         BYTE   W96
@@ -155,7 +155,7 @@ rffield_1_LOOP:
 // 009   ----------------------------------------
         BYTE   W96
 // 010   ----------------------------------------
-rffield_1_10:
+rffield_Song_1_10:
         BYTE   W24
         BYTE           N11     Cn3   v092
         BYTE   W12
@@ -171,7 +171,7 @@ rffield_1_10:
         BYTE   W12
         BYTE   PEND
 // 011   ----------------------------------------
-rffield_1_11:
+rffield_Song_1_11:
         BYTE           N11     Gs3   v092
         BYTE   W24
         BYTE           N20     Gs4   v075
@@ -191,16 +191,16 @@ rffield_1_11:
         BYTE   W96
 // 016   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_1_10
+         POIN2  rffield_Song_1_10
 // 017   ----------------------------------------
         BYTE           N11     Gs3   v092
         BYTE   W96
 // 018   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_1_10
+         POIN2  rffield_Song_1_10
 // 019   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_1_11
+         POIN2  rffield_Song_1_11
 // 020   ----------------------------------------
         BYTE   W96
 // 021   ----------------------------------------
@@ -221,13 +221,13 @@ rffield_1_11:
         BYTE   W96
 // 029   ----------------------------------------
         BYTE   GoTo
-         POIN2  rffield_1_LOOP
+         POIN2  rffield_Song_1_LOOP
         BYTE   FINE
 
 //****************** Track 2 (Midi-Chn.2) ******************//
 
-rffield_2:
-        BYTE   KEYSH   rffield_key+0
+rffield_Song_2:
+        BYTE   KEYSH   rffield_Song_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   123
         BYTE           VOL     108
@@ -252,7 +252,7 @@ rffield_2:
         BYTE                   Dn1   v092
         BYTE   W12
 // 001   ----------------------------------------
-rffield_2_LOOP:
+rffield_Song_2_LOOP:
         BYTE           N05     Dn1   v045
         BYTE   W06
         BYTE                   Dn1
@@ -280,7 +280,7 @@ rffield_2_LOOP:
         BYTE                   Dn1
         BYTE   W06
 // 002   ----------------------------------------
-rffield_2_2:
+rffield_Song_2_2:
         BYTE           N11     Dn1   v075
         BYTE   W12
         BYTE                   Dn1   v127
@@ -304,7 +304,7 @@ rffield_2_2:
         BYTE   W12
         BYTE   PEND
 // 003   ----------------------------------------
-rffield_2_3:
+rffield_Song_2_3:
         BYTE           N05     Dn1   v045
         BYTE   W06
         BYTE                   Dn1
@@ -334,33 +334,33 @@ rffield_2_3:
         BYTE   PEND
 // 004   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_2
+         POIN2  rffield_Song_2_2
 // 005   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_3
+         POIN2  rffield_Song_2_3
 // 006   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_2
+         POIN2  rffield_Song_2_2
 // 007   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_3
+         POIN2  rffield_Song_2_3
 // 008   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_2
+         POIN2  rffield_Song_2_2
 // 009   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_3
+         POIN2  rffield_Song_2_3
 // 010   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_2
+         POIN2  rffield_Song_2_2
 // 011   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_3
+         POIN2  rffield_Song_2_3
 // 012   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_2
+         POIN2  rffield_Song_2_2
 // 013   ----------------------------------------
-rffield_2_13:
+rffield_Song_2_13:
         BYTE           N05     Dn1   v045
         BYTE   W06
         BYTE                   Dn1
@@ -391,12 +391,12 @@ rffield_2_13:
         BYTE   PEND
 // 014   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_2
+         POIN2  rffield_Song_2_2
 // 015   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_13
+         POIN2  rffield_Song_2_13
 // 016   ----------------------------------------
-rffield_2_16:
+rffield_Song_2_16:
         BYTE           N11     Dn1   v075
         BYTE   W12
         BYTE                   Dn1   v105
@@ -421,34 +421,34 @@ rffield_2_16:
         BYTE   PEND
 // 017   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_3
+         POIN2  rffield_Song_2_3
 // 018   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_16
+         POIN2  rffield_Song_2_16
 // 019   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_3
+         POIN2  rffield_Song_2_3
 // 020   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_16
+         POIN2  rffield_Song_2_16
 // 021   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_3
+         POIN2  rffield_Song_2_3
 // 022   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_16
+         POIN2  rffield_Song_2_16
 // 023   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_3
+         POIN2  rffield_Song_2_3
 // 024   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_16
+         POIN2  rffield_Song_2_16
 // 025   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_3
+         POIN2  rffield_Song_2_3
 // 026   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_16
+         POIN2  rffield_Song_2_16
 // 027   ----------------------------------------
         BYTE           N05     Dn1   v045
         BYTE   W06
@@ -480,23 +480,23 @@ rffield_2_16:
         BYTE   W06
 // 028   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_2_2
+         POIN2  rffield_Song_2_2
 // 029   ----------------------------------------
         BYTE   GoTo
-         POIN2  rffield_2_LOOP
+         POIN2  rffield_Song_2_LOOP
         BYTE   FINE
 
 //****************** Track 3 (Midi-Chn.3) ******************//
 
-rffield_3:
-        BYTE   KEYSH   rffield_key+0
+rffield_Song_3:
+        BYTE   KEYSH   rffield_Song_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   60
         BYTE           VOL     127
         BYTE           PAN     c_v-8
         BYTE   W96
 // 001   ----------------------------------------
-rffield_3_LOOP:
+rffield_Song_3_LOOP:
         BYTE   W96
 // 002   ----------------------------------------
         BYTE   W96
@@ -610,7 +610,7 @@ rffield_3_LOOP:
         BYTE                   Cs3   v084
         BYTE   W12
 // 021   ----------------------------------------
-rffield_3_21:
+rffield_Song_3_21:
         BYTE           N11     Cs3   v060
         BYTE   W12
         BYTE                   Cs3
@@ -629,7 +629,7 @@ rffield_3_21:
         BYTE   W12
         BYTE   PEND
 // 022   ----------------------------------------
-rffield_3_22:
+rffield_Song_3_22:
         BYTE           N11     Cs3   v060
         BYTE   W12
         BYTE                   Ds3   v084
@@ -648,7 +648,7 @@ rffield_3_22:
         BYTE   W12
         BYTE   PEND
 // 023   ----------------------------------------
-rffield_3_23:
+rffield_Song_3_23:
         BYTE           N11     Ds3   v060
         BYTE   W12
         BYTE                   Ds3
@@ -685,32 +685,32 @@ rffield_3_23:
         BYTE   W12
 // 025   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_3_21
+         POIN2  rffield_Song_3_21
 // 026   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_3_22
+         POIN2  rffield_Song_3_22
 // 027   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_3_23
+         POIN2  rffield_Song_3_23
 // 028   ----------------------------------------
         BYTE           N11     Ds3   v060
         BYTE   W96
 // 029   ----------------------------------------
         BYTE   GoTo
-         POIN2  rffield_3_LOOP
+         POIN2  rffield_Song_3_LOOP
         BYTE   FINE
 
 //****************** Track 4 (Midi-Chn.4) ******************//
 
-rffield_4:
-        BYTE   KEYSH   rffield_key+0
+rffield_Song_4:
+        BYTE   KEYSH   rffield_Song_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   60
         BYTE           VOL     127
         BYTE           PAN     c_v+11
         BYTE   W96
 // 001   ----------------------------------------
-rffield_4_LOOP:
+rffield_Song_4_LOOP:
         BYTE   W96
 // 002   ----------------------------------------
         BYTE   W96
@@ -825,13 +825,13 @@ rffield_4_LOOP:
         BYTE   W96
 // 029   ----------------------------------------
         BYTE   GoTo
-         POIN2  rffield_4_LOOP
+         POIN2  rffield_Song_4_LOOP
         BYTE   FINE
 
 //****************** Track 5 (Midi-Chn.5) ******************//
 
-rffield_5:
-        BYTE   KEYSH   rffield_key+0
+rffield_Song_5:
+        BYTE   KEYSH   rffield_Song_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   48
         BYTE           PAN     c_v-9
@@ -852,7 +852,7 @@ rffield_5:
         BYTE                   Ds3
         BYTE   W12
 // 001   ----------------------------------------
-rffield_5_LOOP:
+rffield_Song_5_LOOP:
         BYTE           N11     Ds3   v075
         BYTE   W12
         BYTE                   Ds3
@@ -870,7 +870,7 @@ rffield_5_LOOP:
         BYTE                   Dn3   v105
         BYTE   W12
 // 002   ----------------------------------------
-rffield_5_2:
+rffield_Song_5_2:
         BYTE           N11     Ds3   v075
         BYTE   W12
         BYTE                   Ds3   v105
@@ -889,7 +889,7 @@ rffield_5_2:
         BYTE   W12
         BYTE   PEND
 // 003   ----------------------------------------
-rffield_5_3:
+rffield_Song_5_3:
         BYTE           N11     Ds3   v075
         BYTE   W12
         BYTE                   Ds3
@@ -909,28 +909,28 @@ rffield_5_3:
         BYTE   PEND
 // 004   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_5_2
+         POIN2  rffield_Song_5_2
 // 005   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_5_3
+         POIN2  rffield_Song_5_3
 // 006   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_5_2
+         POIN2  rffield_Song_5_2
 // 007   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_5_3
+         POIN2  rffield_Song_5_3
 // 008   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_5_2
+         POIN2  rffield_Song_5_2
 // 009   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_5_3
+         POIN2  rffield_Song_5_3
 // 010   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_5_2
+         POIN2  rffield_Song_5_2
 // 011   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_5_3
+         POIN2  rffield_Song_5_3
 // 012   ----------------------------------------
         BYTE           N11     Ds3   v075
         BYTE   W12
@@ -1018,13 +1018,13 @@ rffield_5_3:
         BYTE   W12
 // 017   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_5_3
+         POIN2  rffield_Song_5_3
 // 018   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_5_2
+         POIN2  rffield_Song_5_2
 // 019   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_5_3
+         POIN2  rffield_Song_5_3
 // 020   ----------------------------------------
         BYTE           N11     Ds3   v075
         BYTE   W60
@@ -1089,13 +1089,13 @@ rffield_5_3:
         BYTE   W12
 // 029   ----------------------------------------
         BYTE   GoTo
-         POIN2  rffield_5_LOOP
+         POIN2  rffield_Song_5_LOOP
         BYTE   FINE
 
 //****************** Track 6 (Midi-Chn.6) ******************//
 
-rffield_6:
-        BYTE   KEYSH   rffield_key+0
+rffield_Song_6:
+        BYTE   KEYSH   rffield_Song_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   48
         BYTE           PAN     c_v+9
@@ -1116,7 +1116,7 @@ rffield_6:
         BYTE                   Gs2
         BYTE   W12
 // 001   ----------------------------------------
-rffield_6_LOOP:
+rffield_Song_6_LOOP:
         BYTE           N11     Gs2   v060
         BYTE   W12
         BYTE                   Gs2
@@ -1134,7 +1134,7 @@ rffield_6_LOOP:
         BYTE                   Gs2
         BYTE   W12
 // 002   ----------------------------------------
-rffield_6_2:
+rffield_Song_6_2:
         BYTE           N11     Gs2   v060
         BYTE   W12
         BYTE                   Gs2   v084
@@ -1153,7 +1153,7 @@ rffield_6_2:
         BYTE   W12
         BYTE   PEND
 // 003   ----------------------------------------
-rffield_6_3:
+rffield_Song_6_3:
         BYTE           N11     Gs2   v060
         BYTE   W12
         BYTE                   Gs2
@@ -1173,28 +1173,28 @@ rffield_6_3:
         BYTE   PEND
 // 004   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_6_2
+         POIN2  rffield_Song_6_2
 // 005   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_6_2
+         POIN2  rffield_Song_6_2
 // 006   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_6_3
+         POIN2  rffield_Song_6_3
 // 007   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_6_2
+         POIN2  rffield_Song_6_2
 // 008   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_6_3
+         POIN2  rffield_Song_6_3
 // 009   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_6_2
+         POIN2  rffield_Song_6_2
 // 010   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_6_3
+         POIN2  rffield_Song_6_3
 // 011   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_6_2
+         POIN2  rffield_Song_6_2
 // 012   ----------------------------------------
         BYTE           N11     Gs2   v060
         BYTE   W12
@@ -1282,13 +1282,13 @@ rffield_6_3:
         BYTE   W12
 // 017   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_6_3
+         POIN2  rffield_Song_6_3
 // 018   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_6_2
+         POIN2  rffield_Song_6_2
 // 019   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_6_2
+         POIN2  rffield_Song_6_2
 // 020   ----------------------------------------
         BYTE           N11     Gs2   v060
         BYTE   W60
@@ -1349,13 +1349,13 @@ rffield_6_3:
         BYTE   W12
 // 029   ----------------------------------------
         BYTE   GoTo
-         POIN2  rffield_6_LOOP
+         POIN2  rffield_Song_6_LOOP
         BYTE   FINE
 
 //****************** Track 7 (Midi-Chn.7) ******************//
 
-rffield_7:
-        BYTE   KEYSH   rffield_key+0
+rffield_Song_7:
+        BYTE   KEYSH   rffield_Song_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   34
         BYTE           VOL     82
@@ -1376,7 +1376,7 @@ rffield_7:
         BYTE                   Gs1   v127
         BYTE   W12
 // 001   ----------------------------------------
-rffield_7_LOOP:
+rffield_Song_7_LOOP:
         BYTE           N11     Gs1   v060
         BYTE   W12
         BYTE                   Gs1
@@ -1392,7 +1392,7 @@ rffield_7_LOOP:
         BYTE                   Gs1
         BYTE   W12
 // 002   ----------------------------------------
-rffield_7_2:
+rffield_Song_7_2:
         BYTE   W12
         BYTE           N11     Gs1   v127
         BYTE   W12
@@ -1410,7 +1410,7 @@ rffield_7_2:
         BYTE   W12
         BYTE   PEND
 // 003   ----------------------------------------
-rffield_7_3:
+rffield_Song_7_3:
         BYTE           N11     Gs1   v060
         BYTE   W12
         BYTE                   Gs1
@@ -1428,28 +1428,28 @@ rffield_7_3:
         BYTE   PEND
 // 004   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_2
+         POIN2  rffield_Song_7_2
 // 005   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_3
+         POIN2  rffield_Song_7_3
 // 006   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_2
+         POIN2  rffield_Song_7_2
 // 007   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_3
+         POIN2  rffield_Song_7_3
 // 008   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_2
+         POIN2  rffield_Song_7_2
 // 009   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_3
+         POIN2  rffield_Song_7_3
 // 010   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_2
+         POIN2  rffield_Song_7_2
 // 011   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_3
+         POIN2  rffield_Song_7_3
 // 012   ----------------------------------------
         BYTE   W12
         BYTE           N11     Cs2   v092
@@ -1467,7 +1467,7 @@ rffield_7_3:
         BYTE                   Cs2
         BYTE   W12
 // 013   ----------------------------------------
-rffield_7_13:
+rffield_Song_7_13:
         BYTE           N11     Cs2   v092
         BYTE   W12
         BYTE                   As1
@@ -1502,7 +1502,7 @@ rffield_7_13:
         BYTE   W12
 // 015   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_13
+         POIN2  rffield_Song_7_13
 // 016   ----------------------------------------
         BYTE           N11     As1   v092
         BYTE   W12
@@ -1522,15 +1522,15 @@ rffield_7_13:
         BYTE   W12
 // 017   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_3
+         POIN2  rffield_Song_7_3
 // 018   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_2
+         POIN2  rffield_Song_7_2
 // 019   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_3
+         POIN2  rffield_Song_7_3
 // 020   ----------------------------------------
-rffield_7_20:
+rffield_Song_7_20:
         BYTE   W12
         BYTE           N11     Fs2   v105
         BYTE   W12
@@ -1548,7 +1548,7 @@ rffield_7_20:
         BYTE   W12
         BYTE   PEND
 // 021   ----------------------------------------
-rffield_7_21:
+rffield_Song_7_21:
         BYTE           N11     Fs2   v075
         BYTE   W12
         BYTE                   Fs2   v105
@@ -1597,10 +1597,10 @@ rffield_7_21:
         BYTE   W12
 // 024   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_20
+         POIN2  rffield_Song_7_20
 // 025   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_21
+         POIN2  rffield_Song_7_21
 // 026   ----------------------------------------
         BYTE   W12
         BYTE           N11     Gs2   v105
@@ -1634,16 +1634,16 @@ rffield_7_21:
         BYTE   W12
 // 028   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_7_2
+         POIN2  rffield_Song_7_2
 // 029   ----------------------------------------
         BYTE   GoTo
-         POIN2  rffield_7_LOOP
+         POIN2  rffield_Song_7_LOOP
         BYTE   FINE
 
 //****************** Track 8 (Midi-Chn.8) ******************//
 
-rffield_8:
-        BYTE   KEYSH   rffield_key+0
+rffield_Song_8:
+        BYTE   KEYSH   rffield_Song_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   47
         BYTE           PAN     c_v+5
@@ -1655,10 +1655,10 @@ rffield_8:
         BYTE           N20     An1
         BYTE   W84
 // 001   ----------------------------------------
-rffield_8_LOOP:
+rffield_Song_8_LOOP:
         BYTE   W96
 // 002   ----------------------------------------
-rffield_8_2:
+rffield_Song_8_2:
         BYTE           N05     Dn2   v110
         BYTE   W06
         BYTE                   Dn2
@@ -1670,22 +1670,22 @@ rffield_8_2:
         BYTE   W96
 // 004   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_8_2
+         POIN2  rffield_Song_8_2
 // 005   ----------------------------------------
         BYTE   W96
 // 006   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_8_2
+         POIN2  rffield_Song_8_2
 // 007   ----------------------------------------
         BYTE   W96
 // 008   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_8_2
+         POIN2  rffield_Song_8_2
 // 009   ----------------------------------------
         BYTE   W96
 // 010   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_8_2
+         POIN2  rffield_Song_8_2
 // 011   ----------------------------------------
         BYTE   W96
 // 012   ----------------------------------------
@@ -1696,7 +1696,7 @@ rffield_8_2:
         BYTE           N20
         BYTE   W84
 // 013   ----------------------------------------
-rffield_8_13:
+rffield_Song_8_13:
         BYTE           N05     Dn2   v110
         BYTE   W06
         BYTE                   Dn2
@@ -1723,57 +1723,57 @@ rffield_8_13:
         BYTE   W96
 // 018   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_8_2
+         POIN2  rffield_Song_8_2
 // 019   ----------------------------------------
         BYTE   W96
 // 020   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_8_13
+         POIN2  rffield_Song_8_13
 // 021   ----------------------------------------
         BYTE   W96
 // 022   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_8_2
+         POIN2  rffield_Song_8_2
 // 023   ----------------------------------------
         BYTE   W96
 // 024   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_8_13
+         POIN2  rffield_Song_8_13
 // 025   ----------------------------------------
         BYTE   W96
 // 026   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_8_2
+         POIN2  rffield_Song_8_2
 // 027   ----------------------------------------
         BYTE   W96
 // 028   ----------------------------------------
         BYTE   PATT
-         POIN2  rffield_8_2
+         POIN2  rffield_Song_8_2
 // 029   ----------------------------------------
         BYTE   GoTo
-         POIN2  rffield_8_LOOP
+         POIN2  rffield_Song_8_LOOP
         BYTE   FINE
 
 
 //********************** End of Song ***********************//
 
-        .align  2
-rffield:
+        ALIGN 4
+rffield_Song:
         BYTE   9                       // Num Tracks
         BYTE   0                       // Unknown
-        BYTE   rffield_pri             // Priority
-        BYTE   rffield_rev             // Reverb
+        BYTE   rffield_Song_pri             // Priority
+        BYTE   rffield_Song_rev             // Reverb
 
-        POIN2   rffield_grp            
+        POIN2   rffield_Song_grp            
 
-        POIN2   rffield_0
-        POIN2   rffield_1
-        POIN2   rffield_2
-        POIN2   rffield_3
-        POIN2   rffield_4
-        POIN2   rffield_5
-        POIN2   rffield_6
-        POIN2   rffield_7
-        POIN2   rffield_8
+        POIN2   rffield_Song_0
+        POIN2   rffield_Song_1
+        POIN2   rffield_Song_2
+        POIN2   rffield_Song_3
+        POIN2   rffield_Song_4
+        POIN2   rffield_Song_5
+        POIN2   rffield_Song_6
+        POIN2   rffield_Song_7
+        POIN2   rffield_Song_8
 
         

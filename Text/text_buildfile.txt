@@ -14,7 +14,9 @@ Learned  [X]
 
 #include "statscreen_text.txt"
 
-
+#0x212 SerolName
+//Why the hell won't this work normally? I don't know.
+Serol[X]
 
 #0xd4c LikesText
 //first text ID in the free block
@@ -120,6 +122,10 @@ a skill when used.[X]
 
 #include "skilldesc_text.txt"
 
+#include "soundroom_text.txt"
+
 #include "unitname_text.txt"
 
-#include "Ch1_text.txt"
+#include "unitdesc_text.txt"
+
+#include "Prologue_Text.txt"

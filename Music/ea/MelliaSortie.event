@@ -1,28 +1,28 @@
 //Event file generated from Sappy .s format.
 	#include "MPlayDef.event"
 
-	#define	L_Mellia_Sortie_grp  voicegroup000
-	#define	L_Mellia_Sortie_pri  0
-	#define	L_Mellia_Sortie_rev  0
-	#define	L_Mellia_Sortie_mvl  80
-	#define	L_Mellia_Sortie_key  0
-	#define	L_Mellia_Sortie_tbs  1
-	#define	L_Mellia_Sortie_exg  0
-	#define	L_Mellia_Sortie_cmp  1
+	#define	L_Mellia_Sortie_Song_grp  voicegroup000
+	#define	L_Mellia_Sortie_Song_pri  0
+	#define	L_Mellia_Sortie_Song_rev  0
+	#define	L_Mellia_Sortie_Song_mvl  80
+	#define	L_Mellia_Sortie_Song_key  0
+	#define	L_Mellia_Sortie_Song_tbs  1
+	#define	L_Mellia_Sortie_Song_exg  0
+	#define	L_Mellia_Sortie_Song_cmp  1
 
 	// .rodata
-	//	L_Mellia_Sortie
+	//	L_Mellia_Sortie_Song
 	ALIGN 4
 
 //**************** Track 1 (Midi-Chn.1) ****************//
 
-L_Mellia_Sortie_1:
-	BYTE	KEYSH   L_Mellia_Sortie_key+0
+L_Mellia_Sortie_Song_1:
+	BYTE	KEYSH   L_Mellia_Sortie_Song_key+0
 // 000   ----------------------------------------
-	BYTE	TEMPO   175*L_Mellia_Sortie_tbs/2
+	BYTE	TEMPO   175*L_Mellia_Sortie_Song_tbs/2
 	BYTE		VOICE   41
 	BYTE		PAN     c_v-26
-	BYTE		VOL     51*L_Mellia_Sortie_mvl/mxv
+	BYTE		VOL     51*L_Mellia_Sortie_Song_mvl/mxv
 	BYTE		N96     Ds4   v100
 	BYTE	W96
 // 001   ----------------------------------------
@@ -31,7 +31,7 @@ L_Mellia_Sortie_1:
 	BYTE	W96
 // 002   ----------------------------------------
 	BYTE	W24
-L_Mellia_Sortie_1_B1:
+L_Mellia_Sortie_Song_1_B1:
 	BYTE		N48     Cs4   v100
 	BYTE		N48     Cs5   v072
 	BYTE	W48
@@ -322,24 +322,24 @@ L_Mellia_Sortie_1_B1:
 // 031   ----------------------------------------
 	BYTE	W48
 	BYTE	GoTo
-	 POIN2	L_Mellia_Sortie_1_B1
-L_Mellia_Sortie_1_B2:
+	 POIN2	L_Mellia_Sortie_Song_1_B1
+L_Mellia_Sortie_Song_1_B2:
 	BYTE	FINE
 
 //**************** Track 2 (Midi-Chn.2) ****************//
 
-L_Mellia_Sortie_2:
-	BYTE	KEYSH   L_Mellia_Sortie_key+0
+L_Mellia_Sortie_Song_2:
+	BYTE	KEYSH   L_Mellia_Sortie_Song_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   40
 	BYTE		PAN     c_v+26
-	BYTE		VOL     51*L_Mellia_Sortie_mvl/mxv
+	BYTE		VOL     51*L_Mellia_Sortie_Song_mvl/mxv
 	BYTE	W96
 // 001   ----------------------------------------
 	BYTE	W96
 // 002   ----------------------------------------
 	BYTE	W24
-L_Mellia_Sortie_2_B1:
+L_Mellia_Sortie_Song_2_B1:
 	BYTE		N48     Cs4   v100
 	BYTE	W48
 	BYTE		        Gs3 
@@ -537,18 +537,18 @@ L_Mellia_Sortie_2_B1:
 // 031   ----------------------------------------
 	BYTE	W48
 	BYTE	GoTo
-	 POIN2	L_Mellia_Sortie_2_B1
-L_Mellia_Sortie_2_B2:
+	 POIN2	L_Mellia_Sortie_Song_2_B1
+L_Mellia_Sortie_Song_2_B2:
 	BYTE	FINE
 
 //**************** Track 3 (Midi-Chn.3) ****************//
 
-L_Mellia_Sortie_3:
-	BYTE	KEYSH   L_Mellia_Sortie_key+0
+L_Mellia_Sortie_Song_3:
+	BYTE	KEYSH   L_Mellia_Sortie_Song_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   57
 	BYTE		PAN     c_v-26
-	BYTE		VOL     51*L_Mellia_Sortie_mvl/mxv
+	BYTE		VOL     51*L_Mellia_Sortie_Song_mvl/mxv
 	BYTE		N07     As3   v100
 	BYTE	W07
 	BYTE		        Ds3 
@@ -606,7 +606,7 @@ L_Mellia_Sortie_3:
 // 002   ----------------------------------------
 	BYTE		        Cs4 
 	BYTE	W24
-L_Mellia_Sortie_3_B1:
+L_Mellia_Sortie_Song_3_B1:
 	BYTE	W72
 // 003   ----------------------------------------
 	BYTE	W96
@@ -802,18 +802,18 @@ L_Mellia_Sortie_3_B1:
 	BYTE		        An2   v056
 	BYTE	W36
 	BYTE	GoTo
-	 POIN2	L_Mellia_Sortie_3_B1
-L_Mellia_Sortie_3_B2:
+	 POIN2	L_Mellia_Sortie_Song_3_B1
+L_Mellia_Sortie_Song_3_B2:
 	BYTE	FINE
 
 //**************** Track 4 (Midi-Chn.4) ****************//
 
-L_Mellia_Sortie_4:
-	BYTE	KEYSH   L_Mellia_Sortie_key+0
+L_Mellia_Sortie_Song_4:
+	BYTE	KEYSH   L_Mellia_Sortie_Song_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   57
 	BYTE		PAN     c_v+26
-	BYTE		VOL     51*L_Mellia_Sortie_mvl/mxv
+	BYTE		VOL     51*L_Mellia_Sortie_Song_mvl/mxv
 	BYTE		N07     As2   v100
 	BYTE	W07
 	BYTE		        Ds2 
@@ -859,7 +859,7 @@ L_Mellia_Sortie_4:
 // 002   ----------------------------------------
 	BYTE		        Cs3 
 	BYTE	W24
-L_Mellia_Sortie_4_B1:
+L_Mellia_Sortie_Song_4_B1:
 	BYTE	W72
 // 003   ----------------------------------------
 	BYTE	W96
@@ -1120,18 +1120,18 @@ L_Mellia_Sortie_4_B1:
 	BYTE		N12     An4 
 	BYTE	W36
 	BYTE	GoTo
-	 POIN2	L_Mellia_Sortie_4_B1
-L_Mellia_Sortie_4_B2:
+	 POIN2	L_Mellia_Sortie_Song_4_B1
+L_Mellia_Sortie_Song_4_B2:
 	BYTE	FINE
 
 //**************** Track 5 (Midi-Chn.5) ****************//
 
-L_Mellia_Sortie_5:
-	BYTE	KEYSH   L_Mellia_Sortie_key+0
+L_Mellia_Sortie_Song_5:
+	BYTE	KEYSH   L_Mellia_Sortie_Song_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   127
 	BYTE		PAN     c_v-26
-	BYTE		VOL     51*L_Mellia_Sortie_mvl/mxv
+	BYTE		VOL     51*L_Mellia_Sortie_Song_mvl/mxv
 	BYTE		N12     Cn1   v127
 	BYTE		N96     Cs2   v100
 	BYTE		N96     Gn2 
@@ -1157,7 +1157,7 @@ L_Mellia_Sortie_5:
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-L_Mellia_Sortie_5_B1:
+L_Mellia_Sortie_Song_5_B1:
 	BYTE		N12     Cn1   v127
 	BYTE		N72     Cs2   v100
 	BYTE		N72     Gn2 
@@ -1176,7 +1176,7 @@ L_Mellia_Sortie_5_B1:
 	BYTE		N06     Fs1   v100
 	BYTE	W12
 // 003   ----------------------------------------
-L_Mellia_Sortie_5_003:
+L_Mellia_Sortie_Song_5_003:
 	BYTE		N06     Fs1   v100
 	BYTE		N12     Dn5   v127
 	BYTE	W12
@@ -1202,7 +1202,7 @@ L_Mellia_Sortie_5_003:
 	BYTE	W12
 	BYTE	PEND
 // 004   ----------------------------------------
-L_Mellia_Sortie_5_004:
+L_Mellia_Sortie_Song_5_004:
 	BYTE		N06     Fs1   v100
 	BYTE		N12     Dn5   v127
 	BYTE	W12
@@ -1228,7 +1228,7 @@ L_Mellia_Sortie_5_004:
 	BYTE	PEND
 // 005   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_003
+	 POIN2	L_Mellia_Sortie_Song_5_003
 // 006   ----------------------------------------
 	BYTE		N06     Fs1   v100
 	BYTE		N06     Dn5   v127
@@ -1260,15 +1260,15 @@ L_Mellia_Sortie_5_004:
 	BYTE	W12
 // 007   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_003
+	 POIN2	L_Mellia_Sortie_Song_5_003
 // 008   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_004
+	 POIN2	L_Mellia_Sortie_Song_5_004
 // 009   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_003
+	 POIN2	L_Mellia_Sortie_Song_5_003
 // 010   ----------------------------------------
-L_Mellia_Sortie_5_010:
+L_Mellia_Sortie_Song_5_010:
 	BYTE		N06     Fs1   v100
 	BYTE		N06     Dn5   v127
 	BYTE	W06
@@ -1298,7 +1298,7 @@ L_Mellia_Sortie_5_010:
 	BYTE	W12
 	BYTE	PEND
 // 011   ----------------------------------------
-L_Mellia_Sortie_5_011:
+L_Mellia_Sortie_Song_5_011:
 	BYTE		N06     Fs1   v100
 	BYTE		N12     Dn5   v127
 	BYTE	W12
@@ -1346,15 +1346,15 @@ L_Mellia_Sortie_5_011:
 	BYTE	W12
 // 013   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_003
+	 POIN2	L_Mellia_Sortie_Song_5_003
 // 014   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_010
+	 POIN2	L_Mellia_Sortie_Song_5_010
 // 015   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_011
+	 POIN2	L_Mellia_Sortie_Song_5_011
 // 016   ----------------------------------------
-L_Mellia_Sortie_5_016:
+L_Mellia_Sortie_Song_5_016:
 	BYTE		N06     Fs1   v100
 	BYTE		N12     Dn5   v127
 	BYTE	W12
@@ -1378,25 +1378,25 @@ L_Mellia_Sortie_5_016:
 	BYTE	PEND
 // 017   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_011
+	 POIN2	L_Mellia_Sortie_Song_5_011
 // 018   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_010
+	 POIN2	L_Mellia_Sortie_Song_5_010
 // 019   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_011
+	 POIN2	L_Mellia_Sortie_Song_5_011
 // 020   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_016
+	 POIN2	L_Mellia_Sortie_Song_5_016
 // 021   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_011
+	 POIN2	L_Mellia_Sortie_Song_5_011
 // 022   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_010
+	 POIN2	L_Mellia_Sortie_Song_5_010
 // 023   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_011
+	 POIN2	L_Mellia_Sortie_Song_5_011
 // 024   ----------------------------------------
 	BYTE		N06     Fs1   v100
 	BYTE		N12     Dn5   v127
@@ -1423,7 +1423,7 @@ L_Mellia_Sortie_5_016:
 	BYTE	W12
 // 025   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_5_011
+	 POIN2	L_Mellia_Sortie_Song_5_011
 // 026   ----------------------------------------
 	BYTE		N06     Fs1   v100
 	BYTE		N06     Dn5   v127
@@ -1582,24 +1582,24 @@ L_Mellia_Sortie_5_016:
 	BYTE		N06   
 	BYTE	W06
 	BYTE	GoTo
-	 POIN2	L_Mellia_Sortie_5_B1
-L_Mellia_Sortie_5_B2:
+	 POIN2	L_Mellia_Sortie_Song_5_B1
+L_Mellia_Sortie_Song_5_B2:
 	BYTE	FINE
 
 //**************** Track 6 (Midi-Chn.6) ****************//
 
-L_Mellia_Sortie_6:
-	BYTE	KEYSH   L_Mellia_Sortie_key+0
+L_Mellia_Sortie_Song_6:
+	BYTE	KEYSH   L_Mellia_Sortie_Song_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   14
-	BYTE		VOL     57*L_Mellia_Sortie_mvl/mxv
+	BYTE		VOL     57*L_Mellia_Sortie_Song_mvl/mxv
 	BYTE		PAN     c_v-26
 	BYTE	W96
 // 001   ----------------------------------------
 	BYTE	W96
 // 002   ----------------------------------------
 	BYTE	W24
-L_Mellia_Sortie_6_B1:
+L_Mellia_Sortie_Song_6_B1:
 	BYTE	W72
 // 003   ----------------------------------------
 	BYTE	W96
@@ -1671,17 +1671,17 @@ L_Mellia_Sortie_6_B1:
 // 031   ----------------------------------------
 	BYTE	W48
 	BYTE	GoTo
-	 POIN2	L_Mellia_Sortie_6_B1
-L_Mellia_Sortie_6_B2:
+	 POIN2	L_Mellia_Sortie_Song_6_B1
+L_Mellia_Sortie_Song_6_B2:
 	BYTE	FINE
 
 //**************** Track 7 (Midi-Chn.7) ****************//
 
-L_Mellia_Sortie_7:
-	BYTE	KEYSH   L_Mellia_Sortie_key+0
+L_Mellia_Sortie_Song_7:
+	BYTE	KEYSH   L_Mellia_Sortie_Song_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   36
-	BYTE		VOL     57*L_Mellia_Sortie_mvl/mxv
+	BYTE		VOL     57*L_Mellia_Sortie_Song_mvl/mxv
 	BYTE		TIE     Cn2   v100
 	BYTE	W96
 // 001   ----------------------------------------
@@ -1695,7 +1695,7 @@ L_Mellia_Sortie_7:
 	BYTE	W12
 // 002   ----------------------------------------
 	BYTE	W24
-L_Mellia_Sortie_7_B1:
+L_Mellia_Sortie_Song_7_B1:
 	BYTE		N24     Fs1   v100
 	BYTE	W24
 	BYTE		N12     Fs2 
@@ -1707,7 +1707,7 @@ L_Mellia_Sortie_7_B1:
 	BYTE		        Fs2 
 	BYTE	W12
 // 003   ----------------------------------------
-L_Mellia_Sortie_7_003:
+L_Mellia_Sortie_Song_7_003:
 	BYTE		N12     Fs1   v100
 	BYTE	W12
 	BYTE		        Fs2 
@@ -1727,10 +1727,10 @@ L_Mellia_Sortie_7_003:
 	BYTE	PEND
 // 004   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_7_003
+	 POIN2	L_Mellia_Sortie_Song_7_003
 // 005   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_7_003
+	 POIN2	L_Mellia_Sortie_Song_7_003
 // 006   ----------------------------------------
 	BYTE		N12     Fs1   v100
 	BYTE	W12
@@ -1749,7 +1749,7 @@ L_Mellia_Sortie_7_003:
 	BYTE		        An2 
 	BYTE	W12
 // 007   ----------------------------------------
-L_Mellia_Sortie_7_007:
+L_Mellia_Sortie_Song_7_007:
 	BYTE		N12     An1   v100
 	BYTE	W12
 	BYTE		        An2 
@@ -1769,10 +1769,10 @@ L_Mellia_Sortie_7_007:
 	BYTE	PEND
 // 008   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_7_007
+	 POIN2	L_Mellia_Sortie_Song_7_007
 // 009   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_7_007
+	 POIN2	L_Mellia_Sortie_Song_7_007
 // 010   ----------------------------------------
 	BYTE		N12     An1   v100
 	BYTE	W12
@@ -1791,7 +1791,7 @@ L_Mellia_Sortie_7_007:
 	BYTE		        Cs3 
 	BYTE	W12
 // 011   ----------------------------------------
-L_Mellia_Sortie_7_011:
+L_Mellia_Sortie_Song_7_011:
 	BYTE		N12     Cs2   v100
 	BYTE	W12
 	BYTE		        Cs3 
@@ -1810,7 +1810,7 @@ L_Mellia_Sortie_7_011:
 	BYTE	W12
 	BYTE	PEND
 // 012   ----------------------------------------
-L_Mellia_Sortie_7_012:
+L_Mellia_Sortie_Song_7_012:
 	BYTE		N12     Bn1   v100
 	BYTE	W12
 	BYTE		        Bn2 
@@ -1829,7 +1829,7 @@ L_Mellia_Sortie_7_012:
 	BYTE	W12
 	BYTE	PEND
 // 013   ----------------------------------------
-L_Mellia_Sortie_7_013:
+L_Mellia_Sortie_Song_7_013:
 	BYTE		N12     As1   v100
 	BYTE	W12
 	BYTE		        As2 
@@ -1866,13 +1866,13 @@ L_Mellia_Sortie_7_013:
 	BYTE	W12
 // 015   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_7_011
+	 POIN2	L_Mellia_Sortie_Song_7_011
 // 016   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_7_012
+	 POIN2	L_Mellia_Sortie_Song_7_012
 // 017   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_7_013
+	 POIN2	L_Mellia_Sortie_Song_7_013
 // 018   ----------------------------------------
 	BYTE		N12     Bn1   v100
 	BYTE	W12
@@ -1889,7 +1889,7 @@ L_Mellia_Sortie_7_013:
 	BYTE		        As2 
 	BYTE	W12
 // 019   ----------------------------------------
-L_Mellia_Sortie_7_019:
+L_Mellia_Sortie_Song_7_019:
 	BYTE		N12     As1   v100
 	BYTE	W12
 	BYTE		        As2 
@@ -1909,10 +1909,10 @@ L_Mellia_Sortie_7_019:
 	BYTE	PEND
 // 020   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_7_019
+	 POIN2	L_Mellia_Sortie_Song_7_019
 // 021   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_7_019
+	 POIN2	L_Mellia_Sortie_Song_7_019
 // 022   ----------------------------------------
 	BYTE		N12     As1   v100
 	BYTE	W12
@@ -2072,24 +2072,24 @@ L_Mellia_Sortie_7_019:
 	BYTE		        Cn3 
 	BYTE	W36
 	BYTE	GoTo
-	 POIN2	L_Mellia_Sortie_7_B1
-L_Mellia_Sortie_7_B2:
+	 POIN2	L_Mellia_Sortie_Song_7_B1
+L_Mellia_Sortie_Song_7_B2:
 	BYTE	FINE
 
 //**************** Track 8 (Midi-Chn.8) ****************//
 
-L_Mellia_Sortie_8:
-	BYTE	KEYSH   L_Mellia_Sortie_key+0
+L_Mellia_Sortie_Song_8:
+	BYTE	KEYSH   L_Mellia_Sortie_Song_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   52
 	BYTE		PAN     c_v+26
-	BYTE		VOL     51*L_Mellia_Sortie_mvl/mxv
+	BYTE		VOL     51*L_Mellia_Sortie_Song_mvl/mxv
 	BYTE	W96
 // 001   ----------------------------------------
 	BYTE	W96
 // 002   ----------------------------------------
 	BYTE	W24
-L_Mellia_Sortie_8_B1:
+L_Mellia_Sortie_Song_8_B1:
 	BYTE		TIE     Cs3   v072
 	BYTE	W72
 // 003   ----------------------------------------
@@ -2170,24 +2170,24 @@ L_Mellia_Sortie_8_B1:
 // 031   ----------------------------------------
 	BYTE	W48
 	BYTE	GoTo
-	 POIN2	L_Mellia_Sortie_8_B1
-L_Mellia_Sortie_8_B2:
+	 POIN2	L_Mellia_Sortie_Song_8_B1
+L_Mellia_Sortie_Song_8_B2:
 	BYTE	FINE
 
 //**************** Track 9 (Midi-Chn.9) ****************//
 
-L_Mellia_Sortie_9:
-	BYTE	KEYSH   L_Mellia_Sortie_key+0
+L_Mellia_Sortie_Song_9:
+	BYTE	KEYSH   L_Mellia_Sortie_Song_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   41
 	BYTE		PAN     c_v-26
-	BYTE		VOL     51*L_Mellia_Sortie_mvl/mxv
+	BYTE		VOL     51*L_Mellia_Sortie_Song_mvl/mxv
 	BYTE	W96
 // 001   ----------------------------------------
 	BYTE	W96
 // 002   ----------------------------------------
 	BYTE	W24
-L_Mellia_Sortie_9_B1:
+L_Mellia_Sortie_Song_9_B1:
 	BYTE		N06     Fs3   v100
 	BYTE	W06
 	BYTE		        Fs3   v056
@@ -2495,24 +2495,24 @@ L_Mellia_Sortie_9_B1:
 // 031   ----------------------------------------
 	BYTE	W48
 	BYTE	GoTo
-	 POIN2	L_Mellia_Sortie_9_B1
-L_Mellia_Sortie_9_B2:
+	 POIN2	L_Mellia_Sortie_Song_9_B1
+L_Mellia_Sortie_Song_9_B2:
 	BYTE	FINE
 
 //**************** Track 10 (Midi-Chn.11) ****************//
 
-L_Mellia_Sortie_10:
-	BYTE	KEYSH   L_Mellia_Sortie_key+0
+L_Mellia_Sortie_Song_10:
+	BYTE	KEYSH   L_Mellia_Sortie_Song_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   62
 	BYTE		PAN     c_v-26
-	BYTE		VOL     51*L_Mellia_Sortie_mvl/mxv
+	BYTE		VOL     51*L_Mellia_Sortie_Song_mvl/mxv
 	BYTE	W96
 // 001   ----------------------------------------
 	BYTE	W96
 // 002   ----------------------------------------
 	BYTE	W24
-L_Mellia_Sortie_10_B1:
+L_Mellia_Sortie_Song_10_B1:
 	BYTE	W72
 // 003   ----------------------------------------
 	BYTE	W96
@@ -2541,7 +2541,7 @@ L_Mellia_Sortie_10_B1:
 	BYTE		        As2 
 	BYTE	W72
 // 013   ----------------------------------------
-L_Mellia_Sortie_10_013:
+L_Mellia_Sortie_Song_10_013:
 	BYTE	W24
 	BYTE		N48     An2   v100
 	BYTE	W48
@@ -2562,7 +2562,7 @@ L_Mellia_Sortie_10_013:
 	BYTE	W72
 // 017   ----------------------------------------
 	BYTE	PATT
-	 POIN2	L_Mellia_Sortie_10_013
+	 POIN2	L_Mellia_Sortie_Song_10_013
 // 018   ----------------------------------------
 	BYTE	W96
 // 019   ----------------------------------------
@@ -2592,24 +2592,24 @@ L_Mellia_Sortie_10_013:
 // 031   ----------------------------------------
 	BYTE	W48
 	BYTE	GoTo
-	 POIN2	L_Mellia_Sortie_10_B1
-L_Mellia_Sortie_10_B2:
+	 POIN2	L_Mellia_Sortie_Song_10_B1
+L_Mellia_Sortie_Song_10_B2:
 	BYTE	FINE
 
 //**************** Track 11 (Midi-Chn.12) ****************//
 
-L_Mellia_Sortie_11:
-	BYTE	KEYSH   L_Mellia_Sortie_key+0
+L_Mellia_Sortie_Song_11:
+	BYTE	KEYSH   L_Mellia_Sortie_Song_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   14
-	BYTE		VOL     56*L_Mellia_Sortie_mvl/mxv
+	BYTE		VOL     56*L_Mellia_Sortie_Song_mvl/mxv
 	BYTE		PAN     c_v+26
 	BYTE	W96
 // 001   ----------------------------------------
 	BYTE	W96
 // 002   ----------------------------------------
 	BYTE	W24
-L_Mellia_Sortie_11_B1:
+L_Mellia_Sortie_Song_11_B1:
 	BYTE	W72
 // 003   ----------------------------------------
 	BYTE	W96
@@ -2681,31 +2681,31 @@ L_Mellia_Sortie_11_B1:
 // 031   ----------------------------------------
 	BYTE	W48
 	BYTE	GoTo
-	 POIN2	L_Mellia_Sortie_11_B1
-L_Mellia_Sortie_11_B2:
+	 POIN2	L_Mellia_Sortie_Song_11_B1
+L_Mellia_Sortie_Song_11_B2:
 	BYTE	FINE
 
 //******************************************************//
 	ALIGN 4
 
-L_Mellia_Sortie:
+L_Mellia_Sortie_Song:
 	BYTE	11	// NumTrks
 	BYTE	0	// NumBlks
-	BYTE	L_Mellia_Sortie_pri	// Priority
-	BYTE	L_Mellia_Sortie_rev	// Reverb.
+	BYTE	L_Mellia_Sortie_Song_pri	// Priority
+	BYTE	L_Mellia_Sortie_Song_rev	// Reverb.
 
-	POIN2	L_Mellia_Sortie_grp
+	POIN2	L_Mellia_Sortie_Song_grp
 
-	POIN2	L_Mellia_Sortie_1
-	POIN2	L_Mellia_Sortie_2
-	POIN2	L_Mellia_Sortie_3
-	POIN2	L_Mellia_Sortie_4
-	POIN2	L_Mellia_Sortie_5
-	POIN2	L_Mellia_Sortie_6
-	POIN2	L_Mellia_Sortie_7
-	POIN2	L_Mellia_Sortie_8
-	POIN2	L_Mellia_Sortie_9
-	POIN2	L_Mellia_Sortie_10
-	POIN2	L_Mellia_Sortie_11
+	POIN2	L_Mellia_Sortie_Song_1
+	POIN2	L_Mellia_Sortie_Song_2
+	POIN2	L_Mellia_Sortie_Song_3
+	POIN2	L_Mellia_Sortie_Song_4
+	POIN2	L_Mellia_Sortie_Song_5
+	POIN2	L_Mellia_Sortie_Song_6
+	POIN2	L_Mellia_Sortie_Song_7
+	POIN2	L_Mellia_Sortie_Song_8
+	POIN2	L_Mellia_Sortie_Song_9
+	POIN2	L_Mellia_Sortie_Song_10
+	POIN2	L_Mellia_Sortie_Song_11
 
 	

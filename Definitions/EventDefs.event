@@ -1,2 +1,7 @@
 #define ClearBGMacro "CALL $89EE2C4"
 #define TutorialTextBox(textID) "SVAL sB 0xFFFFFFFF; TUTORIALTEXTBOXSTART; TEXTSHOW textID; TEXTEND; REMA"
+#define NoItems [0,0,0,0]
+#define ChargeAI [0, 0, 0x4, 0]
+#define AttackInRangeAI [0, 0x3, 0x4, 0]
+#define GuardTileAI [0x3, 0x3, 0x4, 0x20]
+#define AttackIn2RangeAI [0, 0x6, 0x4, 0]

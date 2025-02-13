@@ -358,10 +358,10 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 // ================================
 
 //If commented, growths will not be displayed by pressing Select.
-#define PRESS_SELECT_TO_VIEW_GROWTHS
+//#define PRESS_SELECT_TO_VIEW_GROWTHS
 
 //If true, the stat colors for player units will reflect their growth in the stat.
-#define USE_STAT_COLORS True
+#define USE_STAT_COLORS False
 
 //When leveling up, the game rerolls (up to 5 times) until you gain at least this many points
 #define MIN_STAT_GAIN 1 // vanilla is 1 

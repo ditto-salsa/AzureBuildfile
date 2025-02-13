@@ -1,4 +1,11 @@
 ALIGN 4
+BelanaMug:
+#incbin "Belana_mug.dmp"
+#incbin "Belana_frames.dmp"
+#incbin "Belana_palette.dmp"
+#incbin "Belana_minimug.dmp"
+
+ALIGN 4
 CeleriaMug:
 #incbin "Celeria_mug.dmp"
 #incbin "Celeria_frames.dmp"
@@ -109,4 +116,11 @@ TrinaMug:
 #incbin "Trina_frames.dmp"
 #incbin "Trina_palette.dmp"
 #incbin "Trina_minimug.dmp"
+
+ALIGN 4
+VathekMug:
+#incbin "Vathek_mug.dmp"
+#incbin "Vathek_frames.dmp"
+#incbin "Vathek_palette.dmp"
+#incbin "Vathek_minimug.dmp"
 

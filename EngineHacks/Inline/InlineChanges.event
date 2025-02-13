@@ -14,4 +14,8 @@ BYTE 0x1
 ORG 0x57278
 BYTE 0x16 0xE0
 
+//No game over when no player units left - 7743
+ORG 0x19024
+BYTE 0x01 0x20
+
 POP

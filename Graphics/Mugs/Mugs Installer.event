@@ -50,10 +50,16 @@ setMugEntry(0xF, RosaMug, 3,6,3,4)
 setMugEntry(0x10, LazarusMug, 3,5,3,3)
 #define LazarusPortrait 0x10
 
-//setMugEntry(0x11, NotTactFMug,)
+setMugEntry(0x11, VathekMug, 3,5,3,3)
+#define VathekPortrait 0x11
+
+setMugEntry(0x12, BelanaMug, 3,6,3,4)
+#define BelanaPortrait 0x12
+
+//setMugEntry(0x12, NotTactFMug,)
 #define NotTactFPortrait 0x11
 
-//setMugEntry(0x12, NotTactMMug,)
+//setMugEntry(0x13, NotTactMMug,)
 #define NotTactMPortrait 0x12
 
 setMugEntry(0x64, FuckElvesMug, 2,5,3,3)

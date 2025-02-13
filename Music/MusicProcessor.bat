@@ -10,7 +10,7 @@ for /f "tokens=*" %%m in (s.txt) do (
 	
 	ren %%m File.s
 
-    ..\s2ea.exe File.s
+    s2ea.exe File.s
 
     ren File.event %%~nm.event
 
@@ -23,3 +23,5 @@ for /f "tokens=*" %%m in (s.txt) do (
 del s.txt
 
 echo Music processed!
+
+pause

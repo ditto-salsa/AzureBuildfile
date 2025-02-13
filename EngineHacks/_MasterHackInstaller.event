@@ -239,8 +239,11 @@ POP
   //Danger Radius - Huichelaar
   #include "ExternalHacks/DangerRadius/FogDR.event"
 
-  //Split_PTABLE - ditto, ASM fix by AuraWolf
-  #include "Necessary/Split_PTABLE/Split_PTABLE.event"
-
   //AutoRepairItems - Retina
   #include "ExternalHacks/AutoRepairItems/Installer.event"
+
+  //EasyModeStatModifier - ditto
+  #include "ExternalHacks/EasyMode/EasyMode.lyn.event"
+
+  //PrologueNoAttackGreenies - ditto
+  #include "ExternalHacks/PrologueNoAttackGreenies/PrologueNoAttackGreenies.lyn.event"

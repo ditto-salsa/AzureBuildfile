@@ -1,0 +1,116 @@
+SetChapterEvents(0x1, ThisChapter)
+
+setText(0x160, NewChName)
+ALIGN 4
+NewChName:
+String("Prologue: Lost and Found")
+BYTE 0
+
+
+ALIGN 4
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+SHORT 0x8 0; POIN EmptyCellEvent; BYTE 8 1; SHORT 0x12
+SHORT 0x8 0; POIN OrinocoCellEvent; BYTE 12 2; SHORT 0x12
+SHORT 0x8 0; POIN EstherCellEvent; BYTE 4 9; SHORT 0x12
+SHORT 0x8 0; POIN AinanCellEvent; BYTE 9 8; SHORT 0x12
+SHORT 0x8 0; POIN JessCellEvent; BYTE 15 8; SHORT 0x12
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+Units:
+UNIT Lazarus SageF Lazarus Level(6,Ally,0) [16,13] 0 0 0 0 [0x38, 0x6C, 0x0, 0x0] NoAI
+UNIT Shino Thief Lazarus Level(5,Ally,0) [16,12] 0 0 0 0 [0x1,0xB,0x6C,0x0] NoAI
+UNIT
+
+ALIGN 4
+NPCUnits:
+UNIT Jess Supplier Lazarus Level(1,NPC,0) [15,7] 0 0 0 0 NoItems NoAI
+UNIT Orinoco Acolyte Lazarus Level(12,NPC,0) [13,1] 0 0 0 0 NoItems NoAI
+UNIT Vathek SageM Lazarus Level(8,NPC,0) [10,6] 0 0 0 0 NoItems NoAI
+UNIT Esther General Lazarus Level(10,NPC,0) [5,7] 0 0 0 0 NoItems NoAI
+UNIT
+
+ALIGN 4
+EnemyUnits:
+UNIT Belana SwordmasterF Belana Level(20,Enemy,0) [3,2] 0 0 0 0 [0x45, 0x6D, 0, 0] [0x0, 0x0, 0x0, 0x20]
+UNIT CultistPhys Myrmidon Belana Level(7,Enemy,1) [] 0 0 0 0 [0x3, 0, 0, 0] ChargeAI
+UNIT
+
+ALIGN 4
+BeginningScene:
+ENUT NeutralNPCSFlag
+LOAD1 0x1 Units; ENUN
+LOAD1 0x1 EnemyUnits; ENUN
+LOAD1 0x1 NPCUnits; ENUN
+CHECK_TUTORIAL
+BEQ 0 sC s0
+	ASMC EasyModeStatModifier
+LABEL 0
+NoFade; ENDA
+
+EndingScene:
+ENUF NeutralNPCSFlag
+MNC2 0x1
+NoFade; ENDA
+
+EmptyCellEvent:
+TILECHANGE 0x0
+NoFade; ENDA
+
+OrinocoCellEvent:
+TILECHANGE 0x1
+NoFade; ENDA
+
+EstherCellEvent:
+TILECHANGE 0x2
+NoFade; ENDA
+
+AinanCellEvent:
+TILECHANGE 0x3
+NoFade; ENDA
+
+JessCellEvent:
+TILECHANGE 0x4
+MUSS MelliaSortie
+//Text(Prologue_JessDoorText)
+CUSA Jess
+SVAL s3 0x1 //Lance
+GIVEITEMTO Jess
+SVAL s3 0x2 //Jesstice_Pike
+GIVEITEMTO Jess
+SVAL s3 Vulnerary
+GIVEITEMTO Jess
+MURE 16
+NoFade; ENDA
