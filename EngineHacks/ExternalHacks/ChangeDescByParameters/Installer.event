@@ -1,0 +1,24 @@
+// Change Desc By Parameters - ditto
+// Works with both units and classes.
+#include "ChangeDescByParameters.lyn.event"
+ALIGN 4
+
+//Values to use to ignore a parameter:
+//UnitID, ClassID, flagID - 0
+//allegiance, chapterID - 0xFF
+//asmFunc - 0xFFFFFFFF
+//UnitID for UnitDescParams and ClassID for ClassDescParams will never be ignored.
+//If textID is 0, the message for no textID will display.
+
+UnitDescParams:
+//BYTE unitID classID allegiance chapterID; POIN asmFunc|1; SHORT flagID textID
+BYTE Jess 0 0x40 0; WORD 0; SHORT 0 0//JessDesc_NPC_Prologue
+BYTE Ainan 0 0x40 0; WORD 0; SHORT 0 0//AinanDesc_NPC_Prologue
+BYTE Esther 0 0x40 0; WORD 0; SHORT 0 0//EstherDesc_NPC_Prologue
+BYTE Orinoco 0 0x40 0; WORD 0; SHORT 0 0//OrinocoDesc_NPC_Prologue
+WORD 0 0 0 //Terminator
+
+ClassDescParams:
+//BYTE unitID classID allegiance chapterID; POIN asmFunc|1; SHORT flagID textID
+
+WORD 0xFFFFFFFF 0xFFFFFFFF 0xFFFFFFFF //Terminator

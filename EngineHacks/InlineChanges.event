@@ -18,4 +18,14 @@ BYTE 0x16 0xE0
 ORG 0x19024
 BYTE 0x01 0x20
 
+//Change song on title screen
+//#define TitleScreenSong(songID) "ORG 0x9ABE; SHORT songID; ORG 0xC640A; SHORT songID; ORG 0xC6434; SHORT songID; ORG 0xA1946; SHORT songID; ORG 0xAFA78; SHORT songID; ORG 0xC5C9C; SHORT songID"
+//TitleScreenSong(UpperSteamCave)
+ORG 0xC5C9C
+SHORT UpperSteamCave
+
+//Remove the LOAD1 0x2 "ignore dead" list
+ORG 0x9ED674
+WORD 0
+
 POP

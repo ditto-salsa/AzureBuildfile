@@ -1,0 +1,7 @@
+//Yeah I have no idea how skillsys default sets up the tables nor do I care to
+//I make code not tables...
+#include "Repointing.event"
+#include "BattleQuotes.event"
+#include "DeathQuotes.event"
+#include "BossBGM.event"
+#include "WeaponTriangle.event"

@@ -79,6 +79,11 @@ MainCode:
                 ' read the line
                 CurrentLine = LineInput(filenum)
 
+                If Microsoft.VisualBasic.Left(CurrentLine, 1) = "," Then
+                    CommentOutLine = True
+                    GoTo CommentOutLineApply
+                End If
+
                 ' if there's a space at the 5th character, we know it's not A1.
                 If Microsoft.VisualBasic.Mid(CurrentLine, 5, 1) = " " Then
 
@@ -100,11 +105,16 @@ MainCode:
                                     CommentOutLine = True
                                 End If
                             Next
+
                             Exit For
+
                         End If
+
                     Next
+
                 End If
 
+CommentOutLineApply:
                 If CommentOutLine Then
                     CurrentFile_AllDefs(counter) = "// #define " & CurrentFile_Names(counter) & " " & CurrentFile_Bytes(counter)
                 Else

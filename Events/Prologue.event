@@ -16,7 +16,7 @@ POIN MiscBasedEvents
 POIN Dunno Dunno Dunno
 POIN Tutorial
 POIN TrapData TrapData
-POIN Units Units
+POIN PlayerUnits PlayerUnits
 POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
@@ -49,29 +49,29 @@ TrapData:
 ENDTRAP
 
 ALIGN 4
-Units:
-UNIT Lazarus SageF Lazarus Level(6,Ally,0) [16,13] 0 0 0 0 [0x38, 0x6C, 0x0, 0x0] NoAI
-UNIT Shino Thief Lazarus Level(5,Ally,0) [16,12] 0 0 0 0 [0x1,0xB,0x6C,0x0] NoAI
+PlayerUnits:
+UNIT Lazarus SageF Lazarus Level(6,Ally,0) [16,13] 0 0 0 0 [Fire, Apollo, Heal, 0x0] NoAI
+UNIT Shino Thief Lazarus Level(5,Ally,0) [16,12] 0 0 0 0 [Shortsword,JusticeBlade,Vulnerary,0x0] NoAI
 UNIT
 
 ALIGN 4
 NPCUnits:
 UNIT Jess Supplier Lazarus Level(1,NPC,0) [15,7] 0 0 0 0 NoItems NoAI
 UNIT Orinoco Acolyte Lazarus Level(12,NPC,0) [13,1] 0 0 0 0 NoItems NoAI
-UNIT Vathek SageM Lazarus Level(8,NPC,0) [10,6] 0 0 0 0 NoItems NoAI
+UNIT Ainan ArcherF Lazarus Level(5,NPC,0) [10,6] 0 0 0 0 NoItems NoAI
 UNIT Esther General Lazarus Level(10,NPC,0) [5,7] 0 0 0 0 NoItems NoAI
 UNIT
 
 ALIGN 4
 EnemyUnits:
-UNIT Belana SwordmasterF Belana Level(20,Enemy,0) [3,2] 0 0 0 0 [0x45, 0x6D, 0, 0] [0x0, 0x0, 0x0, 0x20]
-UNIT CultistPhys Myrmidon Belana Level(7,Enemy,1) [] 0 0 0 0 [0x3, 0, 0, 0] ChargeAI
+UNIT Belana SwordmasterF Belana Level(20,Enemy,1) [3,2] 0 0 0 0 [BraveSword, Elixir, 0, 0] ChargeAI
+UNIT CultistPhys Myrmidon Belana Level(7,Enemy,1) [3,4] 0 0 0 0 [SteelSword, 0, 0, 0] ChargeAI
 UNIT
 
 ALIGN 4
 BeginningScene:
 ENUT NeutralNPCSFlag
-LOAD1 0x1 Units; ENUN
+LOAD1 0x1 PlayerUnits; ENUN
 LOAD1 0x1 EnemyUnits; ENUN
 LOAD1 0x1 NPCUnits; ENUN
 CHECK_TUTORIAL
@@ -87,28 +87,47 @@ NoFade; ENDA
 
 EmptyCellEvent:
 TILECHANGE 0x0
+Text(Prologue_EmptyCellText)
+SVAL s3 BlightedBrew
+GIVEITEMTO (-1)
 NoFade; ENDA
 
 OrinocoCellEvent:
 TILECHANGE 0x1
+MUSS MelliaSortie
+Text(Prologue_OrinocoCellText)
+CUSA Orinoco
+SVAL s3 Lumen
+GIVEITEMTO Orinoco
+MURE 16
 NoFade; ENDA
 
 EstherCellEvent:
 TILECHANGE 0x2
+MUSS MelliaSortie
+Text(Prologue_EstherCellText)
+CUSA Esther
+MURE 16
 NoFade; ENDA
 
 AinanCellEvent:
 TILECHANGE 0x3
+MUSS MelliaSortie
+Text(Prologue_AinanCellText)
+CUSA Ainan
+SVAL s3 WoodenBow
+GIVEITEMTO Ainan
+MURE 16
 NoFade; ENDA
 
 JessCellEvent:
 TILECHANGE 0x4
 MUSS MelliaSortie
-//Text(Prologue_JessDoorText)
+Text(Prologue_JessCellText)
 CUSA Jess
-SVAL s3 0x1 //Lance
+SVAL s3 Lance
 GIVEITEMTO Jess
-SVAL s3 0x2 //Jesstice_Pike
+SVAL s3 JessticePike
 GIVEITEMTO Jess
 SVAL s3 Vulnerary
 GIVEITEMTO Jess

@@ -1,0 +1,6 @@
+#define BossBGM(unit, song) "SHORT unit 0 song 0"
+
+ALIGN 4
+NewBossBGMTable:
+BossBGM(Belana,DPPt_LegendaryPokemon)
+WORD 0xFFFFFFFF 0xFFFFFFFF //Terminator

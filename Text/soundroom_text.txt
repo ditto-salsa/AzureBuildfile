@@ -1,8 +1,14 @@
 ## PointOfNoReturn_Text ^
-Eschatos - Point of No Return
+Eschatos - Point of No Return[X]
+
+## GulcasaSortie_Text ^
+Yggdra Union - Gulcasa Sortie[X]
+
+## NessiahSortie_Text ^
+Yggdra Union - Nessiah Sortie[X]
 
 ## Sky_Peak_Final_Pass_Text ^
-Pkmn MD Explorers - Sky Peak Final Pass
+Pkmn MD Explorers - Sky Peak Final Pass[X]
 
 ## The_One_They_Call_Witch_Text ^
-OT - The One They Call Witch
+OT - The One They Call Witch[X]

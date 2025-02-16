@@ -1,0 +1,15 @@
+## Prologue_EmptyCellText
+[OpenMidRight][LoadFace][CurrentPortrait][ToggleMouthMove](Hmm... Nobody's in this one.[an]
+But what's this?)[ToggleMouthMove][a][X]
+
+## Prologue_OrinocoCellText
+[OpenMidRight][LoadFace][0x01][0x01]filler text my beloved[a][X]
+
+## Prologue_EstherCellText
+[OpenMidRight][LoadFace][0x01][0x01]filler text my beloved[a][X]
+
+## Prologue_AinanCellText
+[OpenMidRight][LoadFace][0x01][0x01]filler text my beloved[a][X]
+
+## Prologue_JessCellText
+[OpenMidRight][LoadFace][0x01][0x01]filler text my beloved[a][X]

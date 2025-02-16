@@ -230,20 +230,33 @@ POP
   // Save/Suspend Expansion
     #include "Necessary/ExpandedModularSave/ExModularSave.event"
 
-  //BattleBGMCustomiser - ditto
+  // BattleBGMCustomiser - ditto
   #include "ExternalHacks/BattleBGMCustomiser/Installer.event"
 
-  //Inline Changes - various, most are FEBuilder patches
-  #include "Inline/InlineChanges.event"
+  // Inline Changes - various, most are FEBuilder patches
+  #include "InlineChanges.event"
 
-  //Danger Radius - Huichelaar
+  // Danger Radius - Huichelaar
   #include "ExternalHacks/DangerRadius/FogDR.event"
 
-  //AutoRepairItems - Retina
+  // Auto Repair Items - Retina
   #include "ExternalHacks/AutoRepairItems/Installer.event"
+  
+  // Extend Weapon Desc Box - Vesly
+  #include "Necessary/ExtendWeaponDescBox/Installer.event"
 
-  //EasyModeStatModifier - ditto
+  // Easy Mode Stat Modifier - ditto
   #include "ExternalHacks/EasyMode/EasyMode.lyn.event"
 
-  //PrologueNoAttackGreenies - ditto
+  // Flag 0x67 No Attack Greenies - ditto
   #include "ExternalHacks/PrologueNoAttackGreenies/PrologueNoAttackGreenies.lyn.event"
+  
+  // Get/Set Unit Stats - ditto
+  #include "ExternalHacks/SetUnitStats/SetUnitStats.lyn.event"
+  
+  // Silent Give Item - ditto
+  #include "ExternalHacks/SilentGiveItem/SilentGiveItem.lyn.event"
+  
+  // Change Desc By Parameters - ditto
+  #include "ExternalHacks/ChangeDescByParameters/Installer.event"
+  

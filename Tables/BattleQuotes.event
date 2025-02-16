@@ -1,0 +1,19 @@
+
+//Definitions
+#define Any 0
+#define AnyCh 0xFF
+#define TriangleAttackCh 0xFE
+#define BattleQuote(attacker, defender, map, flag, text) "SHORT attacker defender map flag text; ALIGN 4; WORD 0;"
+#define BattleQuoteEvent(attacker, defender, map, flag, event) "SHORT attacker defender map flag 0; ALIGN 4; POIN event;"
+#define BattleQuoteBothWays(attacker, defender, map, flag, text) "SHORT attacker defender map flag text; ALIGN 4; WORD 0; SHORT defender attacker map flag text; ALIGN 4; WORD 0"
+#define BattleQuoteEventBothWays(attacker, defender, map, flag, event) "SHORT attacker defender map flag 0; ALIGN 4; POIN event; SHORT defender attacker map flag 0; ALIGN 4; POIN event"
+
+//Table
+ALIGN 4
+NewBattleQuoteTable:
+BattleQuoteBothWays(Belana, Any, 0, 0x1, 0xC43)
+SHORT 0xFFFF 0; WORD 0 0 0 //End table
+
+#undef Any
+#undef AnyCh
+#undef TriangleAttackCh

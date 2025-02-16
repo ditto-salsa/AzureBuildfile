@@ -8,21 +8,22 @@
     //Text first for Text ID definitions
     #include "repointedTextTable.event"
     #include "Text/InstallTextData.event"
-    #define NotTactName 0x50
-    /* Set NotTactName to gPlaySt.play_name in RAM with Anti-Huffman flag set */ PUSH; ORG TextTable + NotTactName * 4; WORD 0x202BD10 | 0x8000000; POP
+    //#define NotTactName 0x50
+    ///* Set NotTactName to gPlaySt.play_name in RAM with Anti-Huffman flag set */ PUSH; ORG TextTable + NotTactName * 4; WORD 0x202BD10 | 0x8000000; POP
     MESSAGE Used text space ends at currentOffset
 
     //Graphics
     #include "Graphics/GraphicsInstaller.event"
     MESSAGE Used graphics space ends at currentOffset
-
-    //CSV tables
-    #include "Tables/TableInstaller.event"
-    MESSAGE Used table space ends at currentOffset
 	
 	//Music
     #include "Music/_Music Installer.event"
     MESSAGE Used music space ends at currentOffset
+
+    //CSV tables
+	#include "Tables/OtherTables.event"
+    #include "Tables/TableInstaller.event"
+    MESSAGE Used table space ends at currentOffset
 
     //Engine Hacks
     #include "EngineHacks/_MasterHackInstaller.event"

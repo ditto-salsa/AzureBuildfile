@@ -1,5 +1,3 @@
-/* Repointing */ PUSH; ORG 0x2C7CC; POIN NewWeaponTriangle; POP
-
 #define WTSword 0x00
 #define WTLance 0x01
 #define WTAxe 0x02

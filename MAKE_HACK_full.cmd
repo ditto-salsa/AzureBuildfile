@@ -42,7 +42,7 @@ if /I not [%1]==[quick] (
   echo Creating definitions from tables...
 
   cd "%base_dir%"
-  %CSVDefCreator% Definitions\ Tables\NightmareModules\CharactersClasses\CharacterTable.csv Tables\NightmareModules\CharactersClasses\ClassTable.csv
+  %CSVDefCreator% Definitions\ Tables\NightmareModules\CharactersClasses\CharacterTable.csv Tables\NightmareModules\CharactersClasses\ClassTable.csv Tables\NightmareModules\Items\ItemTable.csv
 
   echo:
   echo Processing tables...

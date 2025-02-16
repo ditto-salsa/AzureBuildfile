@@ -1,0 +1,14 @@
+//Definitions
+#define Any 0
+#define AnyCh 0xFF
+#define DeathQuote(unit, chapter, flag, text) "SHORT unit; BYTE 0xFF chapter; SHORT flag text; WORD 0"
+#define DeathQuoteEvent(unit, chapter, flag, event) "SHORT unit; BYTE 0xFF chapter; SHORT flag 0; POIN event"
+
+//Table
+ALIGN 4
+NewDeathQuoteTable:
+DeathQuote(Belana, 0, 0x2, 0xC43)
+SHORT 0xFFFF 0; WORD 0 0 //Terminator
+
+#undef Any
+#undef AnyCh

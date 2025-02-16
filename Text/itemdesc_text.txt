@@ -1,0 +1,31 @@
+## ApolloDesc *
+Yeah, I doubt it's the sun guy either.[N]
+Regain action on kill.[X]
+
+## ShortswordDesc *
+It's not about the height,[N]
+it's about the person![X]
+
+## JusticeBladeDesc *
+There's no such thing as a good thief.[N]
+Or something. Effective vs [anima][light][dark][staff].[X]
+
+## WoodenBowDesc *
+Bow 'o' wood. Akin to the Bo'oh'o'wo'a.[N]
+Basic as can be bow.[X]
+
+## LanceDesc *
+Pointy stick; good for poking.[N]
+Yer basic lance, for all prodding needs.[X]
+
+## JessticePikeDesc *
+[OpenQuote]I'm a comedic genius, I know.[CloseQuote][N]
+Effective against [armor].[X]
+
+## LumenDesc *
+Ooh, shiny! Basic light magic.[X]
+
+## BlightedBrewDesc *
+Inflicts 3 Blight points[N]
+upon the consumer.[N]
+Smells distinctly of ginger.[X]

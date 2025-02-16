@@ -7,7 +7,7 @@
 #define Orinoco 0x06
 #define Vathek 0x07
 #define Esther 0x08
-#define Colm 0x09
+#define Ainan 0x09
 #define Garcia 0x0A
 #define Innes 0x0B
 #define Lute 0x0C

@@ -128,8 +128,8 @@ SHORT $46c0
   // BYTE $a0
 
 //Unlock Sound Room songs
-  ORG $aede0
-  BYTE $FF
+  //ORG $aede0
+  //BYTE $FF
 
 //CG Fade glitch
   ORG $EBCA

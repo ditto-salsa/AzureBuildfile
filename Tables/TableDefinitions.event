@@ -107,13 +107,6 @@
 #define GiveNoExp 0x01000000
 #define Lethality 0x02000000
 #define IsMagicSeal 0x04000000
-#ifdef _FE7_
-  #define DropLastItem 0x08000000
-  #define UnlockEliwood 0x10000000
-  #define UnlockHector 0x20000000
-  #define UnlockLyn 0x40000000
-  #define UnlockAthos 0x80000000
-#endif
 #ifdef _FE8_
   #define Summoning 0x08000000
   #define UnlockEirika 0x10000000
@@ -121,6 +114,18 @@
   #define UnlockLock3 0x40000000
   #define UnlockLock4 0x80000000
 #endif
+
+//Weapon Lock combos before WLA
+#define ShinoLock 0x10000000|0x20000000
+#define JessLock 0x10000000|0x40000000
+#define LazarusLock 0x10000000|0x80000000
+#define AinanLock 0x10000000|0x00010000
+#define OrinocoLock 0x20000000|0x40000000
+#define EstherLock 0x20000000|0x80000000
+#define SerolLock 0x20000000|0x00010000
+#define ThaliaLock 0x40000000|0x80000000
+#define SamaelLock 0x40000000|0x00010000
+#define NotTactLock 0x80000000|0x00010000
 
 // Affinity
 #define NoAffinity 0

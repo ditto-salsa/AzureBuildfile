@@ -30,3 +30,9 @@ Esther[X]
 
 ## BelanaName
 Belana[X]
+
+## AinanName
+Ainan[X]
+
+## CultistName
+Cultist[X]

@@ -56,6 +56,9 @@ setMugEntry(0x11, VathekMug, 3,5,3,3)
 setMugEntry(0x12, BelanaMug, 3,6,3,4)
 #define BelanaPortrait 0x12
 
+//setMugEntry(0x13, AinanMug,
+#define AinanPortrait 0x2
+
 //setMugEntry(0x12, NotTactFMug,)
 #define NotTactFPortrait 0x11
 

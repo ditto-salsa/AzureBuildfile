@@ -1,0 +1,23 @@
+## ApolloName *
+Apollo[X]
+
+## ShortswordName *
+Shortsword[X]
+
+## JusticeBladeName *
+Justice Blade[X]
+
+## BlightedBrewName *
+Blighted Brew[X]
+
+## LumenName *
+Lumen[X]
+
+## WoodenBowName *
+Wooden Bow[X]
+
+## JessticePikeName *
+Jess-tice Pike[X]
+
+## LanceName *
+Lance[X]
