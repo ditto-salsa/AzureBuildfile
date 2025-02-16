@@ -31,7 +31,7 @@
 SongTable(0x43,UpperSteamCave_Song,0)
 #define UpperSteamCave 0x43
 
-#include "ea/Clashing_Of_Waves.event"
+#include "ea/Clashing_of_Waves.event"
 SongTable(0x3,ClashingOfWaves_Song,1)
 #define ClashingOfWaves 0x3
 
