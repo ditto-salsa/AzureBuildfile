@@ -1,7 +1,7 @@
-## ApolloName *
+## ApolloName
 Apollo[X]
 
-## ShortswordName *
+## ShortswordName
 Shortsword[X]
 
 ## JusticeBladeName *
