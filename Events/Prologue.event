@@ -97,7 +97,7 @@ TILECHANGE 0x1
 MUSS MelliaSortie
 Text(Prologue_OrinocoCellText)
 CUSA Orinoco
-ASMC GivenOrinocoItems_PopupWrapper|1
+ASMC GivenOrinocoItems_PopupWrapper
 SVAL s1 Orinoco
 SVAL s3 0
 SVAL s2 Lumen
@@ -105,12 +105,13 @@ ASMC SilentGiveItem
 MURE 30
 NoFade; ENDA
 
-GivenOrinocoItems_PopupWrapper:
+CodeLabel(GivenOrinocoItems_PopupWrapper)
 SHORT 0xB500 0x4908 0x468E 0xB081 0x4669 0x6008 0xB081 0x4669 0x4809 0x6008 0x4804 0x4905 0x4A05 0x4B06 0xF800 0xB002 0xBC01 0x4700; WORD 0x08011490
 POIN GivenOrinocoItems_PopupDefs; WORD 120 1 0x240 4
 GivenOrinocoItems_PopupDefs:
 WORD 0xC 0x5A
 WORD 0x6 Prologue_GivenOrinocoItems
+WORD 0x1 0x1
 WORD 0 0
 
 
@@ -119,7 +120,7 @@ TILECHANGE 0x2
 MUSS MelliaSortie
 Text(Prologue_EstherCellText)
 CUSA Esther
-ASMC GivenEstherItems_PopupWrapper|1
+ASMC GivenEstherItems_PopupWrapper
 SVAL s1 Esther
 SVAL s3 0
 SVAL s2 Lance
@@ -127,7 +128,7 @@ ASMC SilentGiveItem
 MURE 30
 NoFade; ENDA
 
-GivenEstherItems_PopupWrapper:
+CodeLabel(GivenEstherItems_PopupWrapper)
 SHORT 0xB500 0x4908 0x468E 0xB081 0x4669 0x6008 0xB081 0x4669 0x4809 0x6008 0x4804 0x4905 0x4A05 0x4B06 0xF800 0xB002 0xBC01 0x4700; WORD 0x08011490
 POIN GivenEstherItems_PopupDefs; WORD 120 1 0x240 4
 GivenEstherItems_PopupDefs:
@@ -141,7 +142,7 @@ TILECHANGE 0x3
 MUSS MelliaSortie
 Text(Prologue_AinanCellText)
 CUSA Ainan
-ASMC GivenAinanItems_PopupWrapper|1
+ASMC GivenAinanItems_PopupWrapper
 SVAL s1 Ainan
 SVAL s3 0
 SVAL s2 WoodenBow
@@ -149,12 +150,13 @@ ASMC SilentGiveItem
 MURE 30
 NoFade; ENDA
 
-GivenAinanItems_PopupWrapper:
+CodeLabel(GivenAinanItems_PopupWrapper)
 SHORT 0xB500 0x4908 0x468E 0xB081 0x4669 0x6008 0xB081 0x4669 0x4809 0x6008 0x4804 0x4905 0x4A05 0x4B06 0xF800 0xB002 0xBC01 0x4700; WORD 0x08011490
 POIN GivenAinanItems_PopupDefs; WORD 120 1 0x240 4
 GivenAinanItems_PopupDefs:
 WORD 0xC 0x5A
 WORD 0x6 Prologue_GivenAinanItems
+WORD 0x1 0x1
 WORD 0 0
 
 
@@ -163,7 +165,7 @@ TILECHANGE 0x4
 MUSS MelliaSortie
 Text(Prologue_JessCellText)
 CUSA Jess
-ASMC GivenJessItems_PopupWrapper|1
+ASMC GivenJessItems_PopupWrapper
 SVAL s1 Jess
 SVAL s3 0
 SVAL s2 Lance
@@ -175,7 +177,7 @@ ASMC SilentGiveItem
 MURE 30
 NoFade; ENDA
 
-GivenJessItems_PopupWrapper:
+CodeLabel(GivenJessItems_PopupWrapper)
 SHORT 0xB500 0x4908 0x468E 0xB081 0x4669 0x6008 0xB081 0x4669 0x4809 0x6008 0x4804 0x4905 0x4A05 0x4B06 0xF800 0xB002 0xBC01 0x4700; WORD 0x08011490
 POIN GivenJessItems_PopupDefs; WORD 120 1 0x240 4 
 GivenJessItems_PopupDefs:
