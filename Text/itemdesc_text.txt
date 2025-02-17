@@ -4,7 +4,7 @@ Regain action on kill.[X]
 
 ## ShortswordDesc *
 It's not about the height,[N]
-it's about the person![X]
+it's about the personality![X]
 
 ## JusticeBladeDesc *
 There's no such thing as a good thief.[N]

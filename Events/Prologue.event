@@ -64,8 +64,8 @@ UNIT
 
 ALIGN 4
 EnemyUnits:
-UNIT Belana SwordmasterF Belana Level(20,Enemy,1) [3,2] 0 0 0 0 [BraveSword, Elixir, 0, 0] ChargeAI
-UNIT CultistPhys Myrmidon Belana Level(7,Enemy,1) [3,4] 0 0 0 0 [SteelSword, 0, 0, 0] ChargeAI
+UNIT Belana SwordmasterF Belana Level(20,Enemy,0) [3,2] 0 0 0 0 [BraveSword, Elixir, 0, 0] [0,0,0,0x20] //+36hp, +15str, -2mag, +11skl, +10spd, +17luck, +16def,
+UNIT CultistPhys Myrmidon Belana Level(7,Enemy,1) [3,4] 0 0 0 0 [SteelSword, 0, 0, 0] [0,0,0,0x20]
 UNIT
 
 ALIGN 4
@@ -97,39 +97,88 @@ TILECHANGE 0x1
 MUSS MelliaSortie
 Text(Prologue_OrinocoCellText)
 CUSA Orinoco
-SVAL s3 Lumen
-GIVEITEMTO Orinoco
-MURE 16
+ASMC GivenOrinocoItems_PopupWrapper|1
+SVAL s1 Orinoco
+SVAL s3 0
+SVAL s2 Lumen
+ASMC SilentGiveItem
+MURE 30
 NoFade; ENDA
+
+GivenOrinocoItems_PopupWrapper:
+SHORT 0xB500 0x4908 0x468E 0xB081 0x4669 0x6008 0xB081 0x4669 0x4809 0x6008 0x4804 0x4905 0x4A05 0x4B06 0xF800 0xB002 0xBC01 0x4700; WORD 0x08011490
+POIN GivenOrinocoItems_PopupDefs; WORD 120 1 0x240 4
+GivenOrinocoItems_PopupDefs:
+WORD 0xC 0x5A
+WORD 0x6 Prologue_GivenOrinocoItems
+WORD 0 0
+
 
 EstherCellEvent:
 TILECHANGE 0x2
 MUSS MelliaSortie
 Text(Prologue_EstherCellText)
 CUSA Esther
-MURE 16
+ASMC GivenEstherItems_PopupWrapper|1
+SVAL s1 Esther
+SVAL s3 0
+SVAL s2 Lance
+ASMC SilentGiveItem
+MURE 30
 NoFade; ENDA
+
+GivenEstherItems_PopupWrapper:
+SHORT 0xB500 0x4908 0x468E 0xB081 0x4669 0x6008 0xB081 0x4669 0x4809 0x6008 0x4804 0x4905 0x4A05 0x4B06 0xF800 0xB002 0xBC01 0x4700; WORD 0x08011490
+POIN GivenEstherItems_PopupDefs; WORD 120 1 0x240 4
+GivenEstherItems_PopupDefs:
+WORD 0xC 0x5A
+WORD 0x6 Prologue_GivenEstherItems
+WORD 0 0
+
 
 AinanCellEvent:
 TILECHANGE 0x3
 MUSS MelliaSortie
 Text(Prologue_AinanCellText)
 CUSA Ainan
-SVAL s3 WoodenBow
-GIVEITEMTO Ainan
-MURE 16
+ASMC GivenAinanItems_PopupWrapper|1
+SVAL s1 Ainan
+SVAL s3 0
+SVAL s2 WoodenBow
+ASMC SilentGiveItem
+MURE 30
 NoFade; ENDA
+
+GivenAinanItems_PopupWrapper:
+SHORT 0xB500 0x4908 0x468E 0xB081 0x4669 0x6008 0xB081 0x4669 0x4809 0x6008 0x4804 0x4905 0x4A05 0x4B06 0xF800 0xB002 0xBC01 0x4700; WORD 0x08011490
+POIN GivenAinanItems_PopupDefs; WORD 120 1 0x240 4
+GivenAinanItems_PopupDefs:
+WORD 0xC 0x5A
+WORD 0x6 Prologue_GivenAinanItems
+WORD 0 0
+
 
 JessCellEvent:
 TILECHANGE 0x4
 MUSS MelliaSortie
 Text(Prologue_JessCellText)
 CUSA Jess
-SVAL s3 Lance
-GIVEITEMTO Jess
-SVAL s3 JessticePike
-GIVEITEMTO Jess
-SVAL s3 Vulnerary
-GIVEITEMTO Jess
-MURE 16
+ASMC GivenJessItems_PopupWrapper|1
+SVAL s1 Jess
+SVAL s3 0
+SVAL s2 Lance
+ASMC SilentGiveItem
+SVAL s2 JessticePike
+ASMC SilentGiveItem
+SVAL s2 Vulnerary
+ASMC SilentGiveItem
+MURE 30
 NoFade; ENDA
+
+GivenJessItems_PopupWrapper:
+SHORT 0xB500 0x4908 0x468E 0xB081 0x4669 0x6008 0xB081 0x4669 0x4809 0x6008 0x4804 0x4905 0x4A05 0x4B06 0xF800 0xB002 0xBC01 0x4700; WORD 0x08011490
+POIN GivenJessItems_PopupDefs; WORD 120 1 0x240 4 
+GivenJessItems_PopupDefs:
+WORD 0xC 0x5A
+WORD 0x6 Prologue_GivenJessItems
+WORD 0 0

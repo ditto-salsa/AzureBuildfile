@@ -10,3 +10,9 @@ BYTE 0x1
 BYTE 0 // terminator
 
 #include "StaffUsability.lyn.event"
+
+//fix by scroomfie to not fuck up multi-hit skills
+PUSH
+ORG 0x2B024
+SHORT 0x7840 //ldrb r0, [r0, #0x01]
+POP

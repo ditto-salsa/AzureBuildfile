@@ -28,4 +28,19 @@ SHORT UpperSteamCave
 ORG 0x9ED674
 WORD 0
 
+//Allow 9 character Tact names - circleseverywhere
+ORG 0x44800
+BYTE 0x9
+ORG 0x482BA
+BYTE 0x9
+
+//TextID of default Tactician name - 7743
+ORG 0x1C21C
+SHORT 0
+ORG 0x1C2C4
+SHORT 0
+ORG 0xA0E50
+SHORT 0
+
+
 POP

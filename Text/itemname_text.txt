@@ -1,7 +1,7 @@
-## ApolloName
+## ApolloName *
 Apollo[X]
 
-## ShortswordName
+## ShortswordName *
 Shortsword[X]
 
 ## JusticeBladeName *
@@ -17,7 +17,7 @@ Lumen[X]
 Wooden Bow[X]
 
 ## JessticePikeName *
-Jess-tice Pike[X]
+Jesstice Pike[X]
 
 ## LanceName *
 Lance[X]

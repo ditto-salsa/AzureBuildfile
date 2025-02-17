@@ -27,11 +27,11 @@
 // If uncommented, a full str/split will be implemented without replacing any stats
 // TODO: Define an item ID for Spirit Dust (Mag statbooster) in "Strmag/Str Mag Split/Installer.event". Energy Ring is used by default!
 // Item icon for Spirit Dust is included! Define your icon ID in "Strmag/_Master Asm Installer.event". Default is Green Note.
-// #define USE_STRMAG_SPLIT
+#define USE_STRMAG_SPLIT
 
 // If uncommented, the statscreen will have a moving background similar to FE6 and FE7.
 // Customization of graphical assets is possible in Necessary/ModularStatScreen/Background/Graphics/Graphics.event.
-#define SCROLLING_STATSCREEN_BACKGROUND
+//#define SCROLLING_STATSCREEN_BACKGROUND
 
 //If uncommented, will enable Battle Stats with Animations Off.
 #define BATTLE_STATS
@@ -64,7 +64,7 @@
 #define EVENT_SEND_TO_CONVOY
 
 //If uncommented, will enable Event Writer.
-//#define EVENT_WRITER
+#define EVENT_WRITER
 
 //If uncommented, will enable Freeze.
 #define FREEZE_HACK
@@ -79,7 +79,7 @@
 #define LTOGGLE_HACK
 
 //If uncommented, will enable Menu Semitransparency.
-#define SEMITRANSPARENCY_CHANGES
+//#define SEMITRANSPARENCY_CHANGES
 
 //If uncommented, will enable use of Supply during the prologue.
 #define PROLOGUE_SUPPLY
@@ -237,7 +237,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 #define PASSIVE_SKILLS_STACK True
 
 // If set to true, units under roof tiles will be considered for aura skills
-#define ROOF_UNIT_AURAS True
+#define ROOF_UNIT_AURAS False
 
 // if uncommented units will be select automatically after galeforce (pressing b won't end their turn)
 // #define ENABLE_GALEFORCE_AUTOSELECT

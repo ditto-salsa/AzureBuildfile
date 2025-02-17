@@ -260,3 +260,6 @@ POP
   // Change Desc By Parameters - ditto
   #include "ExternalHacks/ChangeDescByParameters/Installer.event"
   
+  // Arbitrary Read/Write - ditto
+  #include "ExternalHacks/ArbitraryReadWrite/Installer.event"
+  

@@ -39,3 +39,4 @@
 
 // #define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
+#define ItemTable NewItemTable
