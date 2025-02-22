@@ -2,10 +2,10 @@ ALIGN 4
 
 #define ProvokeGemEffectID 0x39
 
-CodeLabel(ProvokeGemUsability)
+ProvokeGemUsability:
 #incbin "ProvokeGemUsability.bin"
 
-CodeLabel(ProvokeGemEffect)
+ProvokeGemEffect:
 #incbin "ProvokeGemEffect.bin"
 POIN ProvokeGem_EventScript
 

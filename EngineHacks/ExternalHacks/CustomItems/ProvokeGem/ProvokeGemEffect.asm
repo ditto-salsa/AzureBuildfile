@@ -20,7 +20,7 @@ mov r1, #32 // 001 00000 dur 1
 mov r0, #10 // 000 01010 sID 10
 orr r0, r1
 mov r1, #0x30
-strb r0, [r5, r1]
+strb r0, [r5, r1] // Status to be set is now done!
 
 ldr r1, ActiveUnit
 str r5, [r1]
