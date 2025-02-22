@@ -13,15 +13,3 @@ But what's this?)[ToggleMouthMove][a][X]
 
 ## Prologue_JessCellText
 [OpenMidRight][LoadFace][0x01][0x01]filler text my beloved[a][X]
-
-## Prologue_GivenOrinocoItems
-Orinoco has been given items![X]
-
-## Prologue_GivenEstherItems
-Esther has been given items![X]
-
-## Prologue_GivenAinanItems
-Ainan has been given items![X]
-
-## Prologue_GivenJessItems
-Jess has been given items![X]

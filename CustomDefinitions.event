@@ -2,6 +2,9 @@
 #define FreeSpaceEnd 0xA000000
 #define FreeSpaceBLRange 0x1c1ec0
 
+#define TRUE 1
+#define FALSE 0
+
 #ifndef ItemTable
   #define ItemTable 0x809B10
 #endif

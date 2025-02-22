@@ -17,9 +17,19 @@ ldr   r0,DefenderStruct
 ldr   r1,ProvokeID
 .short  0xF800
 cmp   r0,#0x0
-beq   Label2
+beq   CheckProvokeGem
 mov   r4,#0xFF      @should be high enough to ensure provokedness without overflowing
-Label2:
+b End
+CheckProvokeGem:
+ldr r0,DefenderStruct
+ldr r1, [r0, #0xC]
+mov r2, #2 
+lsl r2, #16 @ 0x20000
+and r2, r1
+cmp r2, #0
+beq End
+mov r4, #0xFF @ emblem! provoke!
+End:
 mov   r0,r4
 pop   {r4}
 pop   {r1}

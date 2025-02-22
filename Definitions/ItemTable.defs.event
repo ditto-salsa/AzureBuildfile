@@ -117,7 +117,7 @@
 // #define  
 // #define  
 // #define  
-// #define  
+#define ProvokeGem 0x76
 // #define  
 // #define  
 // #define  

@@ -118,6 +118,13 @@ Cost[X]
 A scroll that teaches[N]
 a skill when used.[X]
 
+## ProvokeStatusName
+Provoke[X]
+
+## ProvokeStatusDesc
+A magical aura provokes enemies[N]
+to charge for you at any cost.[X]
+
 #include "unitmenu_text.txt"
 
 #include "skilldesc_text.txt"

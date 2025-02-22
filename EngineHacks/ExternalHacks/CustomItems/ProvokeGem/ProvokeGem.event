@@ -1,0 +1,17 @@
+ALIGN 4
+
+#define ProvokeGemEffectID 0x39
+
+CodeLabel(ProvokeGemUsability)
+#incbin "ProvokeGemUsability.bin"
+
+CodeLabel(ProvokeGemEffect)
+#incbin "ProvokeGemEffect.bin"
+POIN ProvokeGem_EventScript
+
+ALIGN 4; ProvokeGem_EventScript:
+EVBIT_MODIFY 1
+CAMERA (-1)
+BREAKSTONE (-1)
+EVBIT_MODIFY 0
+NoFade; ENDA

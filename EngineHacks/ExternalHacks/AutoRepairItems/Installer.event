@@ -1,18 +1,64 @@
-#include "PerChapterItems.lyn.event"
+// ASMC 
+#define AutoRefreshItems "ASMC RefreshItemsASMC|1"
+#define AutoRefreshItems(uses) "SVAL s1 uses; ASMC RefreshItemsASMC|1"
+
+// convoy size, change if expanding convoy
+#define MaxConvoy 100
+
+// item name width in stat screen
+#define ItemNameWidth 0x08
+
+// if true, weapons at 0 durability will have reduced stats and still be equippable.
+#define EQUIP_BROKEN_WEAPONS FALSE
+
+// if false, magic weapons will be exempt from the above rule
+#define EQUIP_BROKEN_MAGIC FALSE
+
+// broken weapon table macro
+#define BrokenWeaponEntry(mt, hit, wt, crit) "BYTE mt hit wt crit"
+
+// filler numbers, change to your specifications
+ALIGN 4
+BrokenWeaponTable:
+BrokenWeaponEntry(0, 50, 20, 0) // swords
+BrokenWeaponEntry(0, 50, 20, 0) // lances
+BrokenWeaponEntry(0, 50, 20, 0) // axes
+BrokenWeaponEntry(0, 50, 20, 0) // bows
+BrokenWeaponEntry(0, 50, 20, 0) // staves
+BrokenWeaponEntry(0, 50, 20, 0) // anima
+BrokenWeaponEntry(0, 50, 20, 0) // light
+BrokenWeaponEntry(0, 50, 20, 0) // dark
+
+ALIGN 4
+RefreshingDurabilityList:
+BYTE 0x09 // vanilla rapier
+BYTE 0x38 // vanilla fire
+BYTE 0 // terminator
+
+// don't touch anything below here
+PUSH
+ORG 0xA00778
+BYTE ItemNameWidth
+ORG 0xA00780
+BYTE ItemNameWidth
+ORG 0xA00788
+BYTE ItemNameWidth
+ORG 0xA00790
+BYTE ItemNameWidth
+ORG 0xA00798
+BYTE ItemNameWidth
+POP
 
 ALIGN 4
 ConvoySize_Link:
-WORD 200
+WORD MaxConvoy
 
 ALIGN 4
-PerChapterItemsList:
-BYTE 0x1
-BYTE 0 // terminator
+EQUIP_BROKEN_WEAPONS_Link:
+WORD EQUIP_BROKEN_WEAPONS
 
-#include "StaffUsability.lyn.event"
+ALIGN 4
+EQUIP_BROKEN_MAGIC_Link:
+WORD EQUIP_BROKEN_MAGIC
 
-//fix by scroomfie to not fuck up multi-hit skills
-PUSH
-ORG 0x2B024
-SHORT 0x7840 //ldrb r0, [r0, #0x01]
-POP
+#include "AutoRefreshingWeapons.lyn.event"

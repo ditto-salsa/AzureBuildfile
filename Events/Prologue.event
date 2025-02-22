@@ -3,8 +3,7 @@ SetChapterEvents(0x1, ThisChapter)
 setText(0x160, NewChName)
 ALIGN 4
 NewChName:
-String("Prologue: Lost and Found")
-BYTE 0
+String("Prologue: Lost and Found"); BYTE 0
 
 
 ALIGN 4
@@ -50,7 +49,7 @@ ENDTRAP
 
 ALIGN 4
 PlayerUnits:
-UNIT Lazarus SageF Lazarus Level(6,Ally,0) [16,13] 0 0 0 0 [Fire, Apollo, Heal, 0x0] NoAI
+UNIT Lazarus SageF Lazarus Level(6,Ally,0) [16,13] 0 0 0 0 [Fire, Apollo, Heal, ProvokeGem] NoAI
 UNIT Shino Thief Lazarus Level(5,Ally,0) [16,12] 0 0 0 0 [Shortsword,JusticeBlade,Vulnerary,0x0] NoAI
 UNIT
 
@@ -64,7 +63,7 @@ UNIT
 
 ALIGN 4
 EnemyUnits:
-UNIT Belana SwordmasterF Belana Level(20,Enemy,0) [3,2] 0 0 0 0 [BraveSword, Elixir, 0, 0] [0,0,0,0x20] //+36hp, +15str, -2mag, +11skl, +10spd, +17luck, +16def,
+UNIT Belana SwordmasterF Belana Level(20,Enemy,0) [3,2] 0 0 0 0 [BraveSword, Elixir, 0, 0] ChargeAI
 UNIT CultistPhys Myrmidon Belana Level(7,Enemy,1) [3,4] 0 0 0 0 [SteelSword, 0, 0, 0] [0,0,0,0x20]
 UNIT
 
@@ -92,81 +91,52 @@ SVAL s3 BlightedBrew
 GIVEITEMTO (-1)
 NoFade; ENDA
 
-OrinocoCellEvent:
 TILECHANGE 0x1
 MUSS MelliaSortie
 Text(Prologue_OrinocoCellText)
 CUSA Orinoco
-ASMC GivenOrinocoItems_PopupWrapper
-SVAL s1 Orinoco
+EventSetPopupUnit(Orinoco)
+ASMC GivenItemsWithSpace_PopupWrapper
 SVAL s3 0
 SVAL s2 Lumen
 ASMC SilentGiveItem
 MURE 30
 NoFade; ENDA
 
-CodeLabel(GivenOrinocoItems_PopupWrapper)
-SHORT 0xB500 0x4908 0x468E 0xB081 0x4669 0x6008 0xB081 0x4669 0x4809 0x6008 0x4804 0x4905 0x4A05 0x4B06 0xF800 0xB002 0xBC01 0x4700; WORD 0x08011490
-POIN GivenOrinocoItems_PopupDefs; WORD 120 1 0x240 4
-GivenOrinocoItems_PopupDefs:
-WORD 0xC 0x5A
-WORD 0x6 Prologue_GivenOrinocoItems
-WORD 0x1 0x1
-WORD 0 0
-
-
 EstherCellEvent:
 TILECHANGE 0x2
 MUSS MelliaSortie
 Text(Prologue_EstherCellText)
 CUSA Esther
-ASMC GivenEstherItems_PopupWrapper
-SVAL s1 Esther
+EventSetPopupUnit(Esther)
+ASMC GivenItems_PopupWrapper
 SVAL s3 0
 SVAL s2 Lance
 ASMC SilentGiveItem
 MURE 30
 NoFade; ENDA
 
-CodeLabel(GivenEstherItems_PopupWrapper)
-SHORT 0xB500 0x4908 0x468E 0xB081 0x4669 0x6008 0xB081 0x4669 0x4809 0x6008 0x4804 0x4905 0x4A05 0x4B06 0xF800 0xB002 0xBC01 0x4700; WORD 0x08011490
-POIN GivenEstherItems_PopupDefs; WORD 120 1 0x240 4
-GivenEstherItems_PopupDefs:
-WORD 0xC 0x5A
-WORD 0x6 Prologue_GivenEstherItems
-WORD 0 0
-
-
 AinanCellEvent:
 TILECHANGE 0x3
 MUSS MelliaSortie
 Text(Prologue_AinanCellText)
+OrinocoCellEvent:
 CUSA Ainan
-ASMC GivenAinanItems_PopupWrapper
-SVAL s1 Ainan
+EventSetPopupUnit(Ainan)
+ASMC GivenItemsWithSpace_PopupWrapper
 SVAL s3 0
 SVAL s2 WoodenBow
 ASMC SilentGiveItem
 MURE 30
 NoFade; ENDA
 
-CodeLabel(GivenAinanItems_PopupWrapper)
-SHORT 0xB500 0x4908 0x468E 0xB081 0x4669 0x6008 0xB081 0x4669 0x4809 0x6008 0x4804 0x4905 0x4A05 0x4B06 0xF800 0xB002 0xBC01 0x4700; WORD 0x08011490
-POIN GivenAinanItems_PopupDefs; WORD 120 1 0x240 4
-GivenAinanItems_PopupDefs:
-WORD 0xC 0x5A
-WORD 0x6 Prologue_GivenAinanItems
-WORD 0x1 0x1
-WORD 0 0
-
-
 JessCellEvent:
 TILECHANGE 0x4
 MUSS MelliaSortie
 Text(Prologue_JessCellText)
 CUSA Jess
-ASMC GivenJessItems_PopupWrapper
-SVAL s1 Jess
+EventSetPopupUnit(Jess)
+ASMC GivenItems_PopupWrapper
 SVAL s3 0
 SVAL s2 Lance
 ASMC SilentGiveItem
@@ -177,10 +147,24 @@ ASMC SilentGiveItem
 MURE 30
 NoFade; ENDA
 
-CodeLabel(GivenJessItems_PopupWrapper)
-SHORT 0xB500 0x4908 0x468E 0xB081 0x4669 0x6008 0xB081 0x4669 0x4809 0x6008 0x4804 0x4905 0x4A05 0x4B06 0xF800 0xB002 0xBC01 0x4700; WORD 0x08011490
-POIN GivenJessItems_PopupDefs; WORD 120 1 0x240 4 
-GivenJessItems_PopupDefs:
-WORD 0xC 0x5A
-WORD 0x6 Prologue_GivenJessItems
-WORD 0 0
+PopupWrapper(GivenItems_PopupWrapper, GivenItems_PopupDefs, 120, 1, 0x240, 4)
+GivenItems_PopupDefs:
+Popup_SetSound(0x5A)
+Popup_SetColour(0x2)
+Popup_UnitName
+Popup_SetColour(0x0)
+Popup_StringPtr(Prologue_GivenXItems)
+Popup_End
+
+PopupWrapper(GivenItemsWithSpace_PopupWrapper, GivenItemsWithSpace_PopupDefs, 120, 1, 0x240, 4)
+GivenItemsWithSpace_PopupDefs:
+Popup_SetSound(0x5A)
+Popup_SetColour(0x2)
+Popup_UnitName
+Popup_SetColour(0x0)
+Popup_StringPtr(Prologue_GivenXItems)
+Popup_Space(0x1)
+Popup_End
+
+Prologue_GivenXItems:
+String(" has been given items!"); BYTE 0

@@ -1,1 +1,2 @@
-#define CodeLabel(label) "PUSH; ORG currentOffset+$1; label: POP"
+#define CodeLabel(label) "ALIGN 4; PUSH; ORG currentOffset+$1; label: POP"
+#define PopupWrapper(label, defs, duration, style, iconObjTileId, pal_base) "CodeLabel(label); SHORT 0xB500 0x4907 0x468E 0xB081 0x9000 0xB081 0x4809 0x9000 0x4804 0x4905 0x4A05 0x4B06 0xF800 0xB002 0xBC01 0x4700; WORD 0x08011490; POIN defs; WORD duration style iconObjTileId pal_base"

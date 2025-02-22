@@ -15,6 +15,9 @@
 #define Popup_Number              "WORD 0x0B 0"
 #define Popup_SetSound(aSoundId)  "WORD 0x0C aSoundId"
 
+// british people require british measures
+#define Popup_SetColour(aColour)    "WORD 0x08 aColour"
+
 // Example (Actual example from the game)
 
 // ORG 0x592230

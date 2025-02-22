@@ -238,8 +238,8 @@ POP
 
   // Danger Radius - Huichelaar
   #include "ExternalHacks/DangerRadius/FogDR.event"
-
-  // Auto Repair Items - Retina
+  
+  // Auto Repair Items - Dragz
   #include "ExternalHacks/AutoRepairItems/Installer.event"
   
   // Extend Weapon Desc Box - Vesly
@@ -263,3 +263,8 @@ POP
   // Arbitrary Read/Write - ditto
   #include "ExternalHacks/ArbitraryReadWrite/Installer.event"
   
+  // Set Popup Unit from Slot 1 - ditto
+  #include "ExternalHacks/SetPopupUnitSlot1/Installer.event"
+  
+  // Custom Items - ditto
+  #include "ExternalHacks/CustomItems/Installer.event"

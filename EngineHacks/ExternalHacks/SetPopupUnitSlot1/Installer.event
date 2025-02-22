@@ -1,0 +1,4 @@
+#define EventSetPopupUnit(unitID) "SVAL s1 unitID; ASMC EventSetPopupUnit"
+CodeLabel(EventSetPopupUnit)
+SHORT 0xB500 0x4804 0x6800 0x4904 0x468E 0xF800 0x4903 0x6008 0xBC01 0x4700; WORD 0x030004BC 0x0800BC50 0x030005F0
+//Takes rom char id in slot 1
