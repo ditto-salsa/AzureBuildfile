@@ -2,7 +2,7 @@
 [OpenMidRight][LoadFace][CurrentPortrait][ToggleMouthMove](Hmm... Nobody's in this one.[n]
 But what's this?)[ToggleMouthMove][a][X]
 
-## Prologue_OrinocoCellText
+## Prologue_VathekCellText
 [OpenMidRight][LoadFace][0x01][0x01]filler text my beloved[a][X]
 
 ## Prologue_EstherCellText
@@ -13,3 +13,33 @@ But what's this?)[ToggleMouthMove][a][X]
 
 ## Prologue_JessCellText
 [OpenMidRight][LoadFace][0x01][0x01]filler text my beloved[a][X]
+
+## Prologue_PrisonerDesc
+A prisoner.[X]
+
+## Prologue_LazarusShinoEnteringMap
+[OpenMidRight][LoadShino][OpenMidLeft][LoadLazarus]
+# Lazarus:
+This place... Bad memories of it, [n]
+and it's even worse after all this time.[an]
+[OpenMidRight]
+# Shino:
+I've never been here before.[an]
+It's quite eerie. And I mean [n]
+that in an unusually bad sense.[an]
+[OpenMidLeft]
+# Lazarus:
+Let's just get who we came for,[an]
+and get out again. I don't want[n]
+to be here a moment longer.[an]
+[OpenMidRight]
+# Shino:
+The cells are just up ahead.[an]
+[ToggleRed]I'm going to get[n]
+everyone out I can.[ToggleRed][an]
+[OpenMidLeft]
+# Lazarus:
+But-[.5]
+[OpenMidRight]
+# Shino:
+

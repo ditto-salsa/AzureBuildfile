@@ -1,0 +1,20 @@
+ALIGN 4; Blitz:
+#incbin "Blitz.bin"
+POIN SkillTester BlitzEvent; WORD BlitzID
+
+ALIGN 4; BlitzEvent: 
+CAM1 0xFFFF; SOUN 0x10F; STAL 16; EVBIT_T 7; ENDA
+
+ALIGN 4; ResetBlitz: 
+SVAL s1 0x38; SVAL s2 Shino; SVAL s3 0; ASMC SetUnitStats; EVBIT_T 7; ENDA
+
+ALIGN 4; EndBlitzUsability:
+#incbin "EndBlitzUsability.bin"
+POIN SkillTester; WORD BlitzID
+
+ALIGN 4; EndBlitzEffect:
+#incbin "EndBlitzEffect.bin"
+
+ALIGN 4; BlitzStrBoost:
+#incbin "BlitzStrengthBoost.bin"
+POIN SkillTester; WORD BlitzID

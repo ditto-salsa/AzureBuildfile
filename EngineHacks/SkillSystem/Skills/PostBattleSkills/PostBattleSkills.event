@@ -92,6 +92,7 @@ CantoPlus:
 #include "CantoPlus/cantoplus.lyn.event"
 POIN SkillTester
 WORD CantoPlusID
+WORD BlitzID
 
 CantoAI_Label:
 WORD CANTO_AI 

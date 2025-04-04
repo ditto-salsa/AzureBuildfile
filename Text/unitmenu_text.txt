@@ -269,3 +269,10 @@ deal remaining uses as damage.[X]
 Increase movement of all[N]
 allied units in a 3 tile[N] 
 radius by 3.[X]
+
+## UM_EndBlitz
+ End Blitz[X]
+
+## UM_EndBlitzDesc
+Forfeit all remaining[N]
+actions granted by Blitz.[X]

@@ -6,6 +6,7 @@
 
 #include "Extensions/Hack Installation.txt"
 #include "Necessary/PopupRework/Extensions/PopupDefinitions.txt"
+#include "Necessary/THUMBLIB2.event"
 
 // hack configuration file
 #include "Config.event"
@@ -249,7 +250,7 @@ POP
   #include "ExternalHacks/EasyMode/EasyMode.lyn.event"
 
   // Flag 0x67 No Attack Greenies - ditto
-  #include "ExternalHacks/PrologueNoAttackGreenies/PrologueNoAttackGreenies.lyn.event"
+  #include "ExternalHacks/Flag67NoAttackGreenies/Flag67NoAttackGreenies.lyn.event"
   
   // Get/Set Unit Stats - ditto
   #include "ExternalHacks/SetUnitStats/SetUnitStats.lyn.event"
@@ -268,3 +269,4 @@ POP
   
   // Custom Items - ditto
   #include "ExternalHacks/CustomItems/Installer.event"
+  

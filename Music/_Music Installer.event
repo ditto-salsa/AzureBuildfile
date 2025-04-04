@@ -99,6 +99,10 @@ SongTable(0x12,FE4_Neutral_Army_Song,1)
 SongTable(0x13,DPPt_LegendaryPokemon_Song,0)
 #define DPPt_LegendaryPokemon 0x13
 
+#include "ea/WaterWorld.event"
+SongTable(0x14,WaterWorld_Song,1)
+#define WaterWorld 0x14
+
 #include "_SoundroomEditor.event"
 
 FE8SoundMixer:

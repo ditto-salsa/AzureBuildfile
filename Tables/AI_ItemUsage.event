@@ -1,0 +1,6 @@
+#define AIU_DoorKey 0x1
+#define AIU_Lockpick 0x2
+#define AIU_Antitoxin 0x4
+#define AI_ItemUsage(ChapterID, setting) "PUSH; ORG $D8538 + (ChapterID * 0x4); BYTE setting; POP"
+
+AI_ItemUsage(0x0, (AIU_Lockpick|AIU_Antitoxin))

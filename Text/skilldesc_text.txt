@@ -1840,3 +1840,9 @@ than one weapon type.[X]
 ## SD_FactionSlayer
 "Faction" Slayer: Deal 2x calculated[N]
 damage to specific opponents.[X]
+
+## SD_Blitz ^
+Blitz: Shino has 3 actions per turn.[N]
+Attacking forfeits all remaining actions.[N]
+Gain +9 str at turn start; lose 3 per action.[N]
+After all 3 actions are done, use remaining mov.[X]

@@ -4,6 +4,7 @@
   .short 0xf800
 .endm
 .equ CantoPlusID, SkillTester+4
+.equ BlitzID, CantoPlusID+4
 .thumb
 push	{r4, lr}
 @check if dead
@@ -20,8 +21,28 @@ ldrb  r1, [r4,#0x0B]  @allegiance byte of the character we are checking
 cmp r0, r1    @check if same character
 bne End
 
+mov r0, r4
+ldr r1, CantoPlusID
+ldr r3, SkillTester
+mov r14, r3
+.short 0xf800
+cmp r0, #0
+bne HasSkill
 
+mov r0, r4
+ldr r1, BlitzID
+ldr r3, SkillTester
+mov r14, r3
+.short 0xf800
+cmp r0, #0
+beq End
 
+mov r1, #0x38
+ldrb r0, [r4, r1]
+cmp r0, #0x2
+blt End
+
+HasSkill:
 @check if waited
 ldrb  r0, [r6,#0x11]  @action taken this turn
 cmp r0, #0x1
@@ -51,15 +72,6 @@ lsl	r1, #0x06 	@has moved already and is in a ballista
 and	r0, r1
 cmp	r0, #0x00
 bne	End
-
-@check for skill
-mov	r0, r4
-ldr	r1, CantoPlusID
-ldr	r3, SkillTester
-mov	lr, r3
-.short	0xf800
-cmp	r0,#0x00
-beq	End
 
 @ if this is off, only refresh unit if player 
 ldr r3, =CantoAI_Label

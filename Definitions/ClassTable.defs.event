@@ -8,10 +8,10 @@
 #define SwordCav 0x05
 #define LancePal 0x07
 #define SwordPal 0x08
-#define LanceArmour 0x09
-#define AxeArmour 0x0A
-#define LanceGeneral 0x0B
-#define AxeGeneral 0x0C
+#define Armour 0x09
+// #define - 0x0A
+#define General 0x0B
+// #define - 0x0C
 #define ThiefM 0x0D
 // #define - 0x0E
 #define MercM 0x0F

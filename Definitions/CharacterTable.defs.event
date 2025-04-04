@@ -71,8 +71,8 @@
 #define Lorien 0x46
 #define Griss 0x47
 #define Belana 0x48
-#define CultistPhys 0x49
-#define CultistMag 0x4A
+#define Cultist 0x49
+// #define - 0x4A
 // #define Novala (Ch 6) 0x4B
 // #define Murray (Ch 7) 0x4C
 // #define Tirado (Ch 8) 0x4D

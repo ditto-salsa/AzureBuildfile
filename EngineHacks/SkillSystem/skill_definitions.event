@@ -21,7 +21,7 @@
 
 //Anathema: -10 Avoid/Dodge to all enemies within 3 tiles.
 //Author Unknown (Initial Commit)
-#define AnathemaID 149
+#define AnathemaID 255
 
 //Blood Tide: Atk and Hit +5 to adjacent allies.
 //By Sme
@@ -1439,3 +1439,7 @@
 //Broken Skills
 #define Roll12ID 255
 #define TraceID 255
+
+
+// New Skills - ditto
+#define BlitzID 149

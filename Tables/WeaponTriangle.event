@@ -42,3 +42,5 @@ BYTE WTDark WTAnima HitWT DmgWT
 BYTE WTBow WTAnima HitWT DmgWT
 BYTE WTBow WTLight HitWT DmgWT
 BYTE WTBow WTDark HitWT DmgWT
+
+WORD 0xFF //Terminator

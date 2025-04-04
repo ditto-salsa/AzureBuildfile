@@ -12,10 +12,10 @@ ALIGN 4
 
 UnitDescParams:
 //BYTE unitID classID allegiance chapterID; POIN asmFunc|1; SHORT flagID textID
-BYTE Jess 0 0x40 0; WORD 0; SHORT 0 0//JessDesc_NPC_Prologue
-BYTE Ainan 0 0x40 0; WORD 0; SHORT 0 0//AinanDesc_NPC_Prologue
-BYTE Esther 0 0x40 0; WORD 0; SHORT 0 0//EstherDesc_NPC_Prologue
-BYTE Orinoco 0 0x40 0; WORD 0; SHORT 0 0//OrinocoDesc_NPC_Prologue
+BYTE Jess 0 0x40 0; WORD 0; SHORT 0 Prologue_PrisonerDesc
+BYTE Ainan 0 0x40 0; WORD 0; SHORT 0 Prologue_PrisonerDesc
+BYTE Esther 0 0x40 0; WORD 0; SHORT 0 Prologue_PrisonerDesc
+BYTE Orinoco 0 0x40 0; WORD 0; SHORT 0 Prologue_PrisonerDesc
 WORD 0 0 0 //Terminator
 
 ClassDescParams:

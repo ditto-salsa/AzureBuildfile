@@ -1,23 +1,44 @@
-## ApolloName *
-Apollo[X]
-
-## ShortswordName *
-Shortsword[X]
+## IronSwordName *
+Iron Sword[X]
 
 ## JusticeBladeName *
 Justice Blade[X]
 
-## BlightedBrewName *
-Blighted Brew[X]
+## IronLanceName *
+Iron Lance[X]
 
-## LumenName *
-Lumen[X]
+## SteelLanceName *
+Steel Lance[X]
 
-## WoodenBowName *
-Wooden Bow[X]
+## SilverLanceName *
+Silver Lance[X]
+
+## GoldLanceName *
+Gold Lance[X]
 
 ## JessticePikeName *
 Jesstice Pike[X]
 
-## LanceName *
-Lance[X]
+## IronBowName *
+Iron Bow[X]
+
+## SteelBowName *
+Steel Bow[X]
+
+## SilverBowName *
+Silver Bow[X]
+
+## GoldBowName *
+Gold Bow [X]
+
+## EclipseBowName *
+Eclipse Bow[X]
+
+## ApolloName *
+Apollo[X]
+
+## LumenName *
+Lumen[X]
+
+## BlightedBrewName *
+Blighted Brew[X]

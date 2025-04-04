@@ -5,7 +5,6 @@ ALIGN 4
 NewChName:
 String("Prologue: Lost and Found"); BYTE 0
 
-
 ALIGN 4
 ThisChapter:
 POIN TurnBasedEvents
@@ -20,6 +19,7 @@ POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+SHORT 0x2 0; POIN ResetBlitz; BYTE 1 255 0 0
 END_MAIN
 
 ALIGN 32
@@ -28,8 +28,8 @@ END_MAIN
 
 LocationBasedEvents:
 SHORT 0x8 0; POIN EmptyCellEvent; BYTE 8 1; SHORT 0x12
-SHORT 0x8 0; POIN OrinocoCellEvent; BYTE 12 2; SHORT 0x12
-SHORT 0x8 0; POIN EstherCellEvent; BYTE 4 9; SHORT 0x12
+SHORT 0x8 0; POIN VathekCellEvent; BYTE 13 2; SHORT 0x12
+SHORT 0x8 0; POIN EstherCellEvent; BYTE 5 9; SHORT 0x12
 SHORT 0x8 0; POIN AinanCellEvent; BYTE 9 8; SHORT 0x12
 SHORT 0x8 0; POIN JessCellEvent; BYTE 15 8; SHORT 0x12
 END_MAIN
@@ -49,23 +49,36 @@ ENDTRAP
 
 ALIGN 4
 PlayerUnits:
-UNIT Lazarus SageF Lazarus Level(6,Ally,0) [16,13] 0 0 0 0 [Fire, Apollo, Heal, ProvokeGem] NoAI
-UNIT Shino Thief Lazarus Level(5,Ally,0) [16,12] 0 0 0 0 [Shortsword,JusticeBlade,Vulnerary,0x0] NoAI
+UNIT Shino Thief Shino Level(14,Ally,0) [16,12] 0 0 0 0 [SteelSword,JusticeBlade,Vulnerary] NoAI
+UNIT Lazarus SageF Shino Level(1,Ally,0) [16,13] 0 0 0 0 [Elfire, Apollo, Heal, 0] NoAI
 UNIT
 
 ALIGN 4
 NPCUnits:
-UNIT Jess Supplier Lazarus Level(1,NPC,0) [15,7] 0 0 0 0 NoItems NoAI
-UNIT Orinoco Acolyte Lazarus Level(12,NPC,0) [13,1] 0 0 0 0 NoItems NoAI
-UNIT Ainan ArcherF Lazarus Level(5,NPC,0) [10,6] 0 0 0 0 NoItems NoAI
-UNIT Esther General Lazarus Level(10,NPC,0) [5,7] 0 0 0 0 NoItems NoAI
+UNIT Jess Supplier Shino Level(9,NPC,0) [15,7] 0 0 0 0 NoItems NoAI
+UNIT Esther General Shino Level(2,NPC,0) [5,7] 0 0 0 0 NoItems NoAI
+UNIT Ainan ArcherF Shino Level(11,NPC,0) [10,6] 0 0 0 0 NoItems NoAI
+UNIT Vathek MageM Shino Level(12,NPC,0) [13,1] 0 0 0 0 NoItems NoAI
 UNIT
+
 
 ALIGN 4
 EnemyUnits:
-UNIT Belana SwordmasterF Belana Level(20,Enemy,0) [3,2] 0 0 0 0 [BraveSword, Elixir, 0, 0] ChargeAI
-UNIT CultistPhys Myrmidon Belana Level(7,Enemy,1) [3,4] 0 0 0 0 [SteelSword, 0, 0, 0] [0,0,0,0x20]
+UNIT Belana SwordmasterF Belana Level(20,Enemy,0) [1,1] 0 0 0 0 [BraveSword, Elixir] AttackInRangeAI //Boss
+
+UNIT Cultist Myrmidon Belana Level(12,Enemy,1) [4,4] 0 0 0 0 [SteelSword] AttackInRangeAI
+
+UNIT Cultist Sniper	Belana Level(1,Enemy,1) [13,3] DropItem 0 0 0 [EclipseBow,DoorKey] AttackInRangeAI
+
+UNIT Cultist Armour Belana Level(11,Enemy,1) [12,6] 0 0 0 0 [IronLance] GuardTileAI
+UNIT Cultist Armour Belana Level(11,Enemy,1) [13,6] 0 0 0 0 [SteelLance] GuardTileAI
+UNIT Cultist Archer Belana Level(10,Enemy,1) [13,5] 0 0 0 0 [SteelBow] GuardTileAI
+UNIT Cultist Archer Belana Level(10,Enemy,1) [12,5] 0 0 0 0 [IronBow] GuardTileAI
+
+UNIT Cultist Fighter Belana Level(8,Enemy,1) [13,8] 0 0 0 0 [HandAxe,SteelAxe] AttackInRangeAI
+
 UNIT
+
 
 ALIGN 4
 BeginningScene:
@@ -73,10 +86,23 @@ ENUT NeutralNPCSFlag
 LOAD1 0x1 PlayerUnits; ENUN
 LOAD1 0x1 EnemyUnits; ENUN
 LOAD1 0x1 NPCUnits; ENUN
+CALL SetBelanaStats
 CHECK_TUTORIAL
 BEQ 0 sC s0
 	ASMC EasyModeStatModifier
 LABEL 0
+NoFade; ENDA
+
+SetBelanaStats:
+SetUnitStats(0x12, Belana, 67)
+SVAL s1 0x13; ASMC SetUnitStats
+SVAL s1 0x14; SVAL s3 27; ASMC SetUnitStats
+SVAL s1 0x15; SVAL s3 30; ASMC SetUnitStats
+SVAL s1 0x16; ASMC SetUnitStats
+SVAL s1 0x17; SVAL s3 22; ASMC SetUnitStats
+SVAL s1 0x19; ASMC SetUnitStats
+SVAL s1 0x18; SVAL s3 5; ASMC SetUnitStats
+SVAL s1 0x3A; SVAL s3 2; ASMC SetUnitStats
 NoFade; ENDA
 
 EndingScene:
@@ -91,14 +117,15 @@ SVAL s3 BlightedBrew
 GIVEITEMTO (-1)
 NoFade; ENDA
 
+VathekCellEvent:
 TILECHANGE 0x1
 MUSS MelliaSortie
-Text(Prologue_OrinocoCellText)
-CUSA Orinoco
-EventSetPopupUnit(Orinoco)
+Text(Prologue_VathekCellText)
+CUSA Vathek
+EventSetPopupUnit(Vathek)
 ASMC GivenItemsWithSpace_PopupWrapper
 SVAL s3 0
-SVAL s2 Lumen
+SVAL s2 Fire
 ASMC SilentGiveItem
 MURE 30
 NoFade; ENDA
@@ -111,7 +138,7 @@ CUSA Esther
 EventSetPopupUnit(Esther)
 ASMC GivenItems_PopupWrapper
 SVAL s3 0
-SVAL s2 Lance
+SVAL s2 IronLance
 ASMC SilentGiveItem
 MURE 30
 NoFade; ENDA
@@ -120,12 +147,11 @@ AinanCellEvent:
 TILECHANGE 0x3
 MUSS MelliaSortie
 Text(Prologue_AinanCellText)
-OrinocoCellEvent:
 CUSA Ainan
 EventSetPopupUnit(Ainan)
 ASMC GivenItemsWithSpace_PopupWrapper
 SVAL s3 0
-SVAL s2 WoodenBow
+SVAL s2 IronBow
 ASMC SilentGiveItem
 MURE 30
 NoFade; ENDA
@@ -138,7 +164,7 @@ CUSA Jess
 EventSetPopupUnit(Jess)
 ASMC GivenItems_PopupWrapper
 SVAL s3 0
-SVAL s2 Lance
+SVAL s2 IronLance
 ASMC SilentGiveItem
 SVAL s2 JessticePike
 ASMC SilentGiveItem

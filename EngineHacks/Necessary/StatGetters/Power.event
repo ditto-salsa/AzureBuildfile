@@ -7,6 +7,7 @@ pPowerModifiers: // Power
 	POIN prAddUnitPower prHalveIfCapturing HalfStrFunc 
 	POIN prDebuffStr Guts PlusAura MinusAura
 	POIN prAddEquipPower prItemPassivePow prRallyStr prLifeAndDeathBonus prSkillFury prFortressDefensePow VigorDanceCheck prFortressResistancePow prResolve prDefiantStr prPushStr
+	POIN BlitzStrBoost
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif

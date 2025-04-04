@@ -1,26 +1,46 @@
-## ApolloDesc *
-Yeah, I doubt it's the sun guy either.[N]
-Regain action on kill.[X]
-
-## ShortswordDesc *
-It's not about the height,[N]
-it's about the personality![X]
+## IronSwordDesc *
+It slashes things to an acceptable grade.[X]
 
 ## JusticeBladeDesc *
-There's no such thing as a good thief.[N]
-Or something. Effective vs [anima][light][dark][staff].[X]
+Mages are all that's evil! Grah![N]
+Effective vs [anima][light][dark][staff].[X]
 
-## WoodenBowDesc *
-Bow 'o' wood. Akin to the Bo'oh'o'wo'a.[N]
-Basic as can be bow.[X]
+## IronLanceDesc *
+Better as a harpoon for fishing.[X]
 
-## LanceDesc *
-Pointy stick; good for poking.[N]
-Yer basic lance, for all prodding needs.[X]
+## SteelLanceDesc *
+test[X]
+
+## SilverLanceDesc *
+test[X]
+
+## GoldLanceDesc *
+test[X]
 
 ## JessticePikeDesc *
 [OpenQuote]I'm a comedic genius, I know.[CloseQuote][N]
 Effective against [armor].[X]
+
+## IronBowDesc *
+Child's toy turned weapon.[X]
+
+## SteelBowDesc *
+A proper war bow with decent power.[X]
+
+## SilverBowDesc *
+Now we're talking! A GOOD bow![X]
+
+## GoldBowDesc *
+Accurate, strong, affordable only by kings![N]
+What's not to love?[X]
+
+## EclipseBowDesc *
+Always hits, Can't crit, halves target HP on hit.[N]
+Just lovely, eh?[X]
+
+## ApolloDesc *
+Yeah, I doubt it's the sun guy either.[N]
+Regain action on kill.[X]
 
 ## LumenDesc *
 Ooh, shiny! Basic light magic.[X]
@@ -28,4 +48,4 @@ Ooh, shiny! Basic light magic.[X]
 ## BlightedBrewDesc *
 Inflicts 3 Blight points[N]
 upon the consumer.[N]
-Smells distinctly of ginger.[X]
+Smells distinctly of rotting fruit.[X]

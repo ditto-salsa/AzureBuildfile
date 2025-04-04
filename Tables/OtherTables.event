@@ -5,3 +5,4 @@
 #include "DeathQuotes.event"
 #include "BossBGM.event"
 #include "WeaponTriangle.event"
+#include "AI_ItemUsage.event"
